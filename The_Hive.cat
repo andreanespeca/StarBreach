@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="03ec-e283-6528-d00e" name="The Hive" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="d284-e42e-1c51-a4fb" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="cc69-08e3-c5ef-085f" name="Taskmaster (Alpha/Psychic)" hidden="false" collective="false" import="true" targetId="8047-f362-40f3-5a5c" type="selectionEntry"/>
+    <entryLink id="1f7b-a02b-13c4-ea48" name="Drone X" hidden="false" collective="false" import="true" targetId="be10-1ee2-5a0f-582b" type="selectionEntry"/>
+    <entryLink id="3f51-39dd-2cd7-f46c" name="Drone Y" hidden="false" collective="false" import="true" targetId="54cc-72e4-5e3d-688a" type="selectionEntry"/>
+    <entryLink id="a2a6-2084-dcd4-4b70" name="Drone Z" hidden="false" collective="false" import="true" targetId="9ee8-f1e2-393c-89dc" type="selectionEntry"/>
+    <entryLink id="c95d-2369-4b4c-a656" name="Harvester" hidden="false" collective="false" import="true" targetId="d2d1-51fb-8874-439f" type="selectionEntry"/>
+    <entryLink id="5ceb-781b-0e5b-e56e" name="Warrior X" hidden="false" collective="false" import="true" targetId="13b9-6db7-aa06-f968" type="selectionEntry"/>
+    <entryLink id="8f2e-1908-44cb-d749" name="Warrior Y" hidden="false" collective="false" import="true" targetId="2b59-e424-d16d-a964" type="selectionEntry"/>
+    <entryLink id="87e3-f175-d368-246d" name="Brood Mother (Unique/Psychic)" hidden="false" collective="false" import="true" targetId="1b0f-5251-5749-2cc1" type="selectionEntry"/>
+    <entryLink id="9790-9f45-3417-9da5" name="Reaper (Unique)" hidden="false" collective="false" import="true" targetId="ab02-10ad-d438-580e" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="c352-c5d5-7ff3-3dda" name="Hivemind" publicationId="9ed2-b94e-33e0-364e" page="67" hidden="false">
+      <description>As long as The Hive’s warband Alpha is alive, Hive soldiers and specialists may use the base initiative value listed in their profiles. When The Hive Alpha is killed, however, then all soldier and specialist initiative values are instantly and permanently dropped to a base value of 1.</description>
+    </rule>
+    <rule id="fb99-2b7d-d52d-0267" name="Scuttering Horde" publicationId="9ed2-b94e-33e0-364e" page="67" hidden="false">
+      <description>All Hive soldiers and specialists ignore difficult terrain for movement and freefall at any height without applying damage. Simi-larly, they can climb up and over any vertical surface (measuring for upward movement). In addition, at the beginning of every turn, before any order dice are drawn, The Hive player may immediately and freely move any three of their soldiers and/or specialists up to 3” in any direction.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="8047-f362-40f3-5a5c" name="Taskmaster (Alpha/Psychic)" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="increment" field="9e37-50a0-9764-fda5" value="3.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="15db-d146-8729-b80c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="bdb4-a0b7-9f8b-7881" name="Taskmaster (Alpha/Psychic)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">6</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">5</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">12</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5ff6-aaf2-3186-d3ad" name="Psychic Ability" hidden="false" targetId="f213-3a80-b234-e742" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e8ed-b416-79d4-7990" name="New CategoryLink" hidden="false" targetId="65fa-de41-86ca-79a3" primary="true"/>
+        <categoryLink id="11cd-2d64-29ef-2463" name="Psychic" hidden="false" targetId="65e2-baf1-a3e7-df11" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="af5e-c737-eccc-4fbc" name="Primary Weapon" hidden="false" collective="false" import="true" targetId="a943-39bb-cce5-abaf" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e7d-3eeb-04b9-707d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5880-439c-6713-b07d" name="Secondary Weapon" hidden="false" collective="false" import="true" targetId="d301-f91a-3127-1eb5" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd01-1dd5-ac24-a948" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="00a1-b757-adad-7b81" name="Relics" hidden="false" collective="false" import="true" targetId="0677-af34-04b3-485f" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd9a-3bd6-9463-5e14" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="15db-d146-8729-b80c" name="Alpha Skills" hidden="false" collective="false" import="true" targetId="3c9c-6b8a-738d-b4ba" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9681-5df3-c4ec-3dd2" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="be10-1ee2-5a0f-582b" name="Drone X" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3fb9-ff80-bdb7-6479" name="Drone X" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">6</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4*</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b074-f7b1-1205-3ffe" name="New CategoryLink" hidden="false" targetId="3c47-be9a-ee6e-cdc3" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="84fe-6d8a-2c8d-fe7f" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="f3dc-228e-4022-a02c" name="Acidic Talons" hidden="false" collective="false" import="true" targetId="b6f9-15a3-1e2e-686f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1ed-3e7b-fbd6-69b3" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45a6-5ef3-9082-122b" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b381-4306-1cb6-aab1" name="Relics" hidden="false" collective="false" import="true" targetId="0677-af34-04b3-485f" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbb5-08dd-5368-c276" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="54cc-72e4-5e3d-688a" name="Drone Y" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9281-2362-bf11-a35b" name="Drone Y" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">6</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">3*</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">7</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="636e-f4fe-8618-ad2d" name="New CategoryLink" hidden="false" targetId="3c47-be9a-ee6e-cdc3" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d73d-9c2a-f645-b0eb" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d920-fddc-2708-c3bf" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="683f-4834-d834-c7ba" name="Needle Gun" hidden="false" collective="false" import="true" targetId="fe89-273c-b59c-0cd5" type="selectionEntry"/>
+            <entryLink id="f622-c3c6-7eaa-8f05" name="Needle Rifle" hidden="false" collective="false" import="true" targetId="3428-dbc9-548c-fad2" type="selectionEntry"/>
+            <entryLink id="6edf-470a-ace7-a0f7" name="Acid Spitter" hidden="false" collective="false" import="true" targetId="adfc-21ff-d916-d6e1" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="033e-a022-6206-28a9" name="Relics" hidden="false" collective="false" import="true" targetId="0677-af34-04b3-485f" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52da-8f4d-740c-558c" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9ee8-f1e2-393c-89dc" name="Drone Z" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0bc6-e853-dda1-8aef" name="Drone Z" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">7</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">3*</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">7</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6c6d-65a5-2aee-4dc0" name="DroneZ" hidden="false" targetId="86de-d1d3-82d8-a442" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7f19-f87f-b9fa-7524" name="New CategoryLink" hidden="false" targetId="3c47-be9a-ee6e-cdc3" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="89e2-6923-b268-2b6b" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="9642-e5ab-2fb8-ee62" name="Needle Rifle" hidden="false" collective="false" import="true" targetId="3428-dbc9-548c-fad2" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f70-ace5-d4a1-590c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5821-dbf7-ae6b-575d" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7754-0a31-26c0-4ff6" name="Relics" hidden="false" collective="false" import="true" targetId="0677-af34-04b3-485f" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b3a-8623-9a48-4fd2" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d2d1-51fb-8874-439f" name="Harvester" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2456-f9fd-239f-6100" name="Harvester" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">7</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4*</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d4f4-a61f-1b88-bf56" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="75c4-93b1-b7ca-6606" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="dae8-8b8f-5ac2-2f04" name="Acidic Claws and Teeth" hidden="false" collective="false" import="true" targetId="aaa8-4476-dcb5-c21c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41b3-9746-8a03-6e27" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe03-f768-f279-a4a7" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ee0d-6c9a-3139-d25c" name="Relics" hidden="false" collective="false" import="true" targetId="0677-af34-04b3-485f" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5aa-ca17-67bf-b112" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="12.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="13b9-6db7-aa06-f968" name="Warrior X" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a7d8-a629-c861-758e" name="Warrior X" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">6</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4*</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">10</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="bacf-66b1-9e5d-1778" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="fdf1-d238-f2ee-4427" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="bb13-c1ee-5ad8-33bf" name="Acidic Lash" hidden="false" collective="false" import="true" targetId="e06b-d49a-1407-e665" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3077-1d98-7e59-c860" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2803-c8f8-0e21-c421" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="01e0-afc2-34ee-5041" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="b8e9-90ef-3c7e-7562" name="Acidic Sword" hidden="false" collective="false" import="true" targetId="ecc6-df61-32ea-12d9" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1904-d23a-ef82-1768" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f50-2f98-cb9d-adf4" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e565-8d86-1cae-b2e4" name="Relics" hidden="false" collective="false" import="true" targetId="0677-af34-04b3-485f" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a97b-bed9-183f-c2e9" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="14.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2b59-e424-d16d-a964" name="Warrior Y" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0b5b-1cd1-2932-6e23" name="Warrior Y" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">6</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4*</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">10</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="59f6-ffbd-342c-e1f4" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1903-2b5d-594a-328e" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="372f-ad5d-f86a-e124" name="Acidic Talons" hidden="false" collective="false" import="true" targetId="b6f9-15a3-1e2e-686f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8aff-a7bd-27fb-de74" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2be-69e3-23bf-d6c6" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4ae8-72c8-9440-661d" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69f9-5a98-b4b2-b39b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5b4d-a6af-c244-1617" name="Spike Cannon" hidden="false" collective="false" import="true" targetId="f77f-768a-6eb4-e9b5" type="selectionEntry"/>
+            <entryLink id="b2ff-2dfd-fca1-8f2c" name="Spore Cannon" hidden="false" collective="false" import="true" targetId="8839-0064-9749-1044" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="9982-7d36-a0e9-94db" name="Relics" hidden="false" collective="false" import="true" targetId="0677-af34-04b3-485f" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6611-f648-976b-ba70" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="14.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ab02-10ad-d438-580e" name="Reaper (Unique)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30a7-38bb-01a7-4bfb" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="d25d-8942-c8b5-3b60" name="Reaper (Unique)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">6</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4*</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">10</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3759-931a-0722-d065" name="Reaper" hidden="false" targetId="930b-3c26-1437-9e91" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2aa2-b0cc-aae9-7880" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f765-d928-1c88-577c" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="7163-6bbe-85c9-dfa4" name="Acidic Lash" hidden="false" collective="false" import="true" targetId="e06b-d49a-1407-e665" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5057-5e3c-8c05-f383" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="445d-a188-539d-4de4" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0aa2-f8ca-d0da-26eb" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="8eb7-a8e9-c11d-1b17" name="Acidic Claws and Teeth" hidden="false" collective="false" import="true" targetId="aaa8-4476-dcb5-c21c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4365-d28f-3dc7-fd96" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbe2-d12c-e881-c276" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2546-6241-0392-be6a" name="Relics" hidden="false" collective="false" import="true" targetId="0677-af34-04b3-485f" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51af-ee13-ac82-76ee" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="16.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1b0f-5251-5749-2cc1" name="Brood Mother (Unique/Psychic)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5ef9-d57d-3814-366e" name="Brood Mother (Unique/Psychic)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">4</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">5</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">18</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="bf69-4e77-1740-4183" name="Brood Mother" hidden="false" targetId="dd5c-fcb0-fb83-5a87" type="profile"/>
+        <infoLink id="01b7-b6f7-de3f-974b" name="Psychic Ability" hidden="false" targetId="f213-3a80-b234-e742" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9bfe-cb66-1952-04c5" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+        <categoryLink id="a4d6-9492-8742-7b35" name="Psychic" hidden="false" targetId="65e2-baf1-a3e7-df11" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c9a7-fa2d-b691-ad28" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="9cd8-4cff-c097-5f5b" name="Spore Cannon" hidden="false" collective="false" import="true" targetId="8839-0064-9749-1044" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fa6-fd7f-776b-c8c7" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7c5-12f4-a47d-1010" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8480-4943-4c53-0c90" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="0021-99f2-fd2b-ebbf" name="Eggs (Brood Mother only)" hidden="false" collective="false" import="true" targetId="3f0d-de6a-01d5-dc7c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b95-f17a-210d-bd06" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3634-4f26-e7d3-00a7" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b6f9-15a3-1e2e-686f" name="Acidic Talons" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="39d6-29d8-bb82-a550" name="Acidic Talons" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in close combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fe89-273c-b59c-0cd5" name="Needle Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0284-b0e3-7b08-32c9" name="Needle Gun" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">12</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+2</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in CC; When used to execute a Focus Fire Action, the action is worked out like a normal Fire Order; No -1 initia-tive modifier applied for moving and shooting</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3428-dbc9-548c-fad2" name="Needle Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f814-54a1-43ea-6300" name="Needle Rifle" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aaa8-4476-dcb5-c21c" name="Acidic Claws and Teeth" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c95d-2369-4b4c-a656" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9790-9f45-3417-9da5" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="8dd2-f3cf-502f-b09e" name="Acidic Claws and Teeth" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in close combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ecc6-df61-32ea-12d9" name="Acidic Sword" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ceb-781b-0e5b-e56e" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="9168-5334-6883-065b" name="Acidic Sword" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+6</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in close combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e06b-d49a-1407-e665" name="Acidic Lash" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9790-9f45-3417-9da5" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ceb-781b-0e5b-e56e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="3ffe-42c3-4a62-7371" name="Acidic Lash" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">12</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">No -1 initiative modifier applied for moving and shooting; can-not be used for Cover Fire Order</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f77f-768a-6eb4-e9b5" name="Spike Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0a2e-c668-04d5-92b3" name="Spike Cannon" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">30</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+6</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="adfc-21ff-d916-d6e1" name="Acid Spitter" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b5db-9197-6cf7-00ec" name="Acid Spitter" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">na</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">Work out all ranged attacks like Cover Fire, but target does not add positive initiative modifiers to their dodge roll for cover; if this weapon hits, for each hit, disregard total damage and tar-get’s armor and immediately subtract 4 health from the target</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8839-0064-9749-1044" name="Spore Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87e3-f175-d368-246d" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="34d0-989e-34c1-4a25" name="Spore Cannon" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">3</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">na</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">Work out all ranged attacks like Cover Fire, but target does not add positive initiative modifiers to their dodge roll for cover; if this weapon hits, for each hit, disregard total damage and tar-get’s armor and immediately subtract 3 health from the target. If a soldier is killed by the Spore Cannon, the model is replaced with an “Egg”. See below for how “Eggs” work.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3f0d-de6a-01d5-dc7c" name="Eggs (Brood Mother only)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0982-2a03-b9ba-0483" name="Eggs (Brood Mother only)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">6</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">na</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">Instead of executing a ranged attack during a Fire or Focus Fire order, the Brood Mother lays a single egg. Place an egg token anywhere 6” from the base of the Brood Mother. At the begin-ning of the following turn, the controlling player rolls a D6. On a 1-3, the egg is sterile, nothing happens and the egg token is removed from play. On a 4-6, the egg hatches into a single Drone X soldier with Needle Gun. The soldier is immediately ready for orders, and a corresponding order dice is added to the dice bag.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="886e-3061-e2e3-4f4d" name="Adrenalin Sac" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="231c-bef1-52de-1eba" name="Adrenalin Sac" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Once per game, before executing an assigned order, the soldier may gain +1 initiative value until the end of the turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6605-0e0b-5bab-b47e" name="Toxin Sac" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5f1d-32bd-d718-f7d7" name="Toxin Sac" hidden="false" typeId="71cc-52da-8668-e6a7" typeName="Ability">
+          <characteristics>
+            <characteristic name="Ability" typeId="2243-ea94-8d78-7049">Once per game, before making any single attack roll or combat roll, the player may declare they are using the soldier’s equipped Toxin Sac. If this roll is successful and the target is hit, the total damage is immediately applied directly to the target’s health and ignores armor.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7ed6-e05e-ea39-375a" name="Elongated Limbs" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="33ea-302e-b4ce-aac2" name="Elongated Limbs" hidden="false" typeId="71cc-52da-8668-e6a7" typeName="Ability">
+          <characteristics>
+            <characteristic name="Ability" typeId="2243-ea94-8d78-7049">Grants +1 movement value to the soldier for the entirety of the battle.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6110-462d-6796-47c6" name="Oversized Mandible" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="bc5e-9ebf-40e5-196c" name="Oversized Mandible" hidden="false" typeId="71cc-52da-8668-e6a7" typeName="Ability">
+          <characteristics>
+            <characteristic name="Ability" typeId="2243-ea94-8d78-7049">Increases the damage bonus applied by the soldier’s melee weapons by +2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ac76-57de-10fc-ad46" name="Magnified Oculus" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="73a3-93e3-b536-fe89" name="Magnified Oculus" hidden="false" typeId="71cc-52da-8668-e6a7" typeName="Ability">
+          <characteristics>
+            <characteristic name="Ability" typeId="2243-ea94-8d78-7049">Increases the range of all the soldier’s ranged weapons by 6”</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d7dd-8ff5-7930-5cdd" name="Hyper Adaptive Scaling" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="71a8-563c-185f-65ee" name="Hyper Adaptive Scaling" hidden="false" typeId="71cc-52da-8668-e6a7" typeName="Ability">
+          <characteristics>
+            <characteristic name="Ability" typeId="2243-ea94-8d78-7049">Grants +2 health value to the soldier for the entirety of the battle.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3c5b-bcd7-4277-90d1" name="Scales of the Fallen" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="61fe-8b2c-952b-70e9" name="Scales of the Fallen" hidden="false" typeId="71cc-52da-8668-e6a7" typeName="Ability">
+          <characteristics>
+            <characteristic name="Ability" typeId="2243-ea94-8d78-7049">Grants +1 armor value to the soldier for the entirety of the battle.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="a943-39bb-cce5-abaf" name="Primary Weapon" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="ab40-0e66-af20-f2b5" name="Acidic Talons" hidden="false" collective="false" import="true" targetId="b6f9-15a3-1e2e-686f" type="selectionEntry"/>
+        <entryLink id="ac8b-84f9-380d-c561" name="Needle Gun" hidden="false" collective="false" import="true" targetId="fe89-273c-b59c-0cd5" type="selectionEntry"/>
+        <entryLink id="5364-04d3-0d22-2cd5" name="Needle Rifle" hidden="false" collective="false" import="true" targetId="3428-dbc9-548c-fad2" type="selectionEntry"/>
+        <entryLink id="fa3e-7bdb-ef47-8b72" name="Acidic Claws and Teeth" hidden="false" collective="false" import="true" targetId="aaa8-4476-dcb5-c21c" type="selectionEntry"/>
+        <entryLink id="b961-4a2f-9a80-b799" name="Acidic Sword" hidden="false" collective="false" import="true" targetId="ecc6-df61-32ea-12d9" type="selectionEntry"/>
+        <entryLink id="a672-9456-ffbb-c7ed" name="Acidic Lash" hidden="false" collective="false" import="true" targetId="e06b-d49a-1407-e665" type="selectionEntry"/>
+        <entryLink id="1489-a72f-99f8-e729" name="Spike Cannon" hidden="false" collective="false" import="true" targetId="f77f-768a-6eb4-e9b5" type="selectionEntry"/>
+        <entryLink id="a73e-a01d-bc94-9663" name="Acid Spitter" hidden="false" collective="false" import="true" targetId="adfc-21ff-d916-d6e1" type="selectionEntry"/>
+        <entryLink id="e61c-1d26-e34f-cbb7" name="Spore Cannon" hidden="false" collective="false" import="true" targetId="8839-0064-9749-1044" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="d301-f91a-3127-1eb5" name="Secondary Weapon" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="09ae-1286-b40b-b5ab" name="Acidic Talons" hidden="false" collective="false" import="true" targetId="b6f9-15a3-1e2e-686f" type="selectionEntry"/>
+        <entryLink id="720d-46d4-6f52-34b7" name="Needle Gun" hidden="false" collective="false" import="true" targetId="fe89-273c-b59c-0cd5" type="selectionEntry"/>
+        <entryLink id="ba2d-fcdd-727c-f8a2" name="Needle Rifle" hidden="false" collective="false" import="true" targetId="3428-dbc9-548c-fad2" type="selectionEntry"/>
+        <entryLink id="fed5-4a4c-1699-7a0d" name="Acidic Claws and Teeth" hidden="false" collective="false" import="true" targetId="aaa8-4476-dcb5-c21c" type="selectionEntry"/>
+        <entryLink id="73ee-e356-18da-f6d0" name="Acidic Sword" hidden="false" collective="false" import="true" targetId="ecc6-df61-32ea-12d9" type="selectionEntry"/>
+        <entryLink id="7296-edd1-6961-3a78" name="Acidic Lash" hidden="false" collective="false" import="true" targetId="e06b-d49a-1407-e665" type="selectionEntry"/>
+        <entryLink id="2361-4460-257b-4072" name="Spike Cannon" hidden="false" collective="false" import="true" targetId="f77f-768a-6eb4-e9b5" type="selectionEntry"/>
+        <entryLink id="479c-cee3-1017-34eb" name="Acid Spitter" hidden="false" collective="false" import="true" targetId="adfc-21ff-d916-d6e1" type="selectionEntry"/>
+        <entryLink id="7cf7-7ce1-a649-e77c" name="Spore Cannon" hidden="false" collective="false" import="true" targetId="8839-0064-9749-1044" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="0677-af34-04b3-485f" name="Relics" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="6baf-663a-277d-3edd" name="Adrenalin Sac" hidden="false" collective="false" import="true" targetId="886e-3061-e2e3-4f4d" type="selectionEntry"/>
+        <entryLink id="8efd-eb80-662f-898b" name="Toxin Sac" hidden="false" collective="false" import="true" targetId="6605-0e0b-5bab-b47e" type="selectionEntry"/>
+        <entryLink id="9c41-5f50-4041-6794" name="Elongated Limbs" hidden="false" collective="false" import="true" targetId="7ed6-e05e-ea39-375a" type="selectionEntry"/>
+        <entryLink id="fe77-2e43-cc53-498c" name="Oversized Mandible" hidden="false" collective="false" import="true" targetId="6110-462d-6796-47c6" type="selectionEntry"/>
+        <entryLink id="72e4-f6f8-237e-80c7" name="Magnified Oculus" hidden="false" collective="false" import="true" targetId="ac76-57de-10fc-ad46" type="selectionEntry"/>
+        <entryLink id="17b9-76d4-89a2-e193" name="Scales of the Fallen" hidden="false" collective="false" import="true" targetId="3c5b-bcd7-4277-90d1" type="selectionEntry"/>
+        <entryLink id="b101-343b-8404-2013" name="Hyper Adaptive Scaling" hidden="false" collective="false" import="true" targetId="d7dd-8ff5-7930-5cdd" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile id="f213-3a80-b234-e742" name="Psychic Ability" hidden="false" typeId="f7f1-057c-64de-8b10" typeName="Psychic Ability">
+      <characteristics>
+        <characteristic name="School Order" typeId="1205-2b68-f272-49f6">All abilities from the School of Bio-Instinct</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="86de-d1d3-82d8-a442" name="DroneZ" hidden="false" typeId="71cc-52da-8668-e6a7" typeName="Ability">
+      <characteristics>
+        <characteristic name="Ability" typeId="2243-ea94-8d78-7049">Special note: Drone Z has wings and can fly, meaning it ignores all terrain rules while executing movement of any kind.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="930b-3c26-1437-9e91" name="Reaper" hidden="false" typeId="71cc-52da-8668-e6a7" typeName="Ability">
+      <characteristics>
+        <characteristic name="Ability" typeId="2243-ea94-8d78-7049">Special Note: When assigned an order die, a Reaper may use the single die to execute two Fire Orders back-to-back, whether they are at the same target or not. Also, a Reaper may be fixed to a base up to 50mm round.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dd5c-fcb0-fb83-5a87" name="Brood Mother" hidden="false" typeId="71cc-52da-8668-e6a7" typeName="Ability">
+      <characteristics>
+        <characteristic name="Ability" typeId="2243-ea94-8d78-7049">Special Note: If a warband includes a Brood Mother, then the “Hivemind” warband special rule must replace the word “Alpha” with the words “Brood Mother”. Also, a Brood Mother may be fixed to a base up to 50mm round.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>

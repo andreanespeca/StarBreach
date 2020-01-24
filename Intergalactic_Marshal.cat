@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="1751-0089-fe00-b7d4" name="Intergalactic Marshal" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="d284-e42e-1c51-a4fb" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="a4b4-c50c-af7d-7590" name="Marshal (Alpha)" hidden="false" collective="false" import="true" targetId="bea9-06f5-b530-01cb" type="selectionEntry"/>
+    <entryLink id="d636-c7f1-c9ab-d501" name="Psycher Deputy (Unique/Psychic)" hidden="false" collective="false" import="true" targetId="e64b-cfbe-c9e3-3b6b" type="selectionEntry"/>
+    <entryLink id="ec80-5238-025e-5d9a" name="Senior Officer" hidden="false" collective="false" import="true" targetId="30a9-67b8-4203-1ea0" type="selectionEntry"/>
+    <entryLink id="c860-8640-d7f1-13ef" name="Officer" hidden="false" collective="false" import="true" targetId="9499-72a7-fa93-e032" type="selectionEntry"/>
+    <entryLink id="c58f-5c1f-eb6d-6ee2" name="Robotic Hound" hidden="false" collective="false" import="true" targetId="d410-caa7-e6c7-b61d" type="selectionEntry"/>
+    <entryLink id="e56b-0c94-9b69-d968" name="Cyborg Specialist" hidden="false" collective="false" import="true" targetId="80bc-9116-567e-d146" type="selectionEntry"/>
+    <entryLink id="fbcb-60e6-1184-7162" name="Cyborg Marksman" hidden="false" collective="false" import="true" targetId="104f-6441-2bb4-f115" type="selectionEntry"/>
+    <entryLink id="08a9-20bf-8bbc-0982" name="Precog (Unique/Psychic)" hidden="false" collective="false" import="true" targetId="5ca5-d695-decb-c9a2" type="selectionEntry"/>
+    <entryLink id="131d-0a4e-9c6a-9a16" name="Breaching Mech (Unique/Mech)" hidden="false" collective="false" import="true" targetId="be33-7dae-bb15-76dc" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="ee8b-6634-4afa-03de" name="I am the Law" publicationId="9ed2-b94e-33e0-364e" page="97" hidden="false">
+      <description>Once per turn, when a single order die is blindly drawn, the Intergalactic Marshal player may choose to have the die mixed back into the bag and the order die draw happen again.</description>
+    </rule>
+    <rule id="5dae-030e-08c2-7fcc" name="Infamous Reputation" publicationId="9ed2-b94e-33e0-364e" page="97" hidden="false">
+      <description>All enemy soldiers and specialists who are within 18” and line-of-sight of an Intergalactic Marshals’ Alpha (at any given mo-ment within the battle) must apply a -2 initiative modifier when making attack rolls and close combat rolls against any member of the Alpha’s warband.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="bea9-06f5-b530-01cb" name="Marshal (Alpha)" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="increment" field="9e37-50a0-9764-fda5" value="3.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8241-c288-eef0-6866" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="f9c5-8f33-4ba1-12bf" name="Marshal (Alpha)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">5</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">5</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">10</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e9e9-f1dc-7f53-1c86" name="New CategoryLink" hidden="false" targetId="65fa-de41-86ca-79a3" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cf19-d154-8850-ec42" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="d6b1-5ac6-02ab-433e" name="Razor Net" hidden="false" collective="false" import="true" targetId="519c-7439-29ac-a73b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd53-9141-191c-4d1f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3ff-9b63-b5c4-9f2f" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="bb13-b4a0-c296-08e8" name="Primary Weapons" hidden="false" collective="false" import="true" targetId="d4d3-1444-2859-5283" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb36-b12f-3d3e-a2d4" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="270d-ab79-5b1b-479b" name="Relics" hidden="false" collective="false" import="true" targetId="9333-b4a5-39cb-51ee" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5f6-1db2-33d6-70d8" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="63b3-1dac-daa3-cf92" name="Grenade" hidden="false" collective="false" import="true" targetId="d82f-463e-79ca-768e" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58c1-da5a-1013-d843" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8241-c288-eef0-6866" name="Alpha Skills" hidden="false" collective="false" import="true" targetId="3c9c-6b8a-738d-b4ba" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7716-f06a-ac26-906f" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e64b-cfbe-c9e3-3b6b" name="Psycher Deputy (Unique/Psychic)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c3b-cb05-47b9-599d" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="0748-e96f-5094-3f57" name="Psycher Deputy (Unique/Psychic)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">5</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">10</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4f37-b85f-9787-418c" name="Psychic Ability" hidden="false" targetId="a78f-5f96-39b6-00c6" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ee83-caf6-f876-a6d4" name="New CategoryLink" hidden="false" targetId="3c47-be9a-ee6e-cdc3" primary="true"/>
+        <categoryLink id="c3f6-959d-34bb-b3d7" name="Psychic" hidden="false" targetId="65e2-baf1-a3e7-df11" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4fb6-e321-8e8d-6415" name="Primary Weapons" hidden="false" collective="false" import="true" targetId="d4d3-1444-2859-5283" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a13e-2a76-2bf1-38db" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="409e-3c97-12da-13f2" name="Secondary Weapons" hidden="false" collective="false" import="true" targetId="fdb0-33d1-0e5c-353c" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="672f-6b0b-f957-8a47" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a909-2ff9-7621-88c6" name="Grenade" hidden="false" collective="false" import="true" targetId="d82f-463e-79ca-768e" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad72-ea5c-63f7-a087" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5677-05f4-34ea-e235" name="Relics" hidden="false" collective="false" import="true" targetId="9333-b4a5-39cb-51ee" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a9c-6c59-c16d-31ee" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="16.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="30a9-67b8-4203-1ea0" name="Senior Officer" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="43dd-83bb-9b07-2387" name="Senior Officer" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">5</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b034-8cc1-e3c4-5751" name="New CategoryLink" hidden="false" targetId="3c47-be9a-ee6e-cdc3" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9959-8efd-c50a-492c" name="Relics" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="b836-116c-bfb7-1de3" name="Plasma Riot Shield" hidden="false" collective="false" import="true" targetId="143d-ab71-2927-73a3" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0b7-d6f3-ee80-b280" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a5a-a4d9-4dd5-3d7e" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4417-43bf-5f69-7d36" name="Primary Weapons" hidden="false" collective="false" import="true" targetId="d4d3-1444-2859-5283" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="858c-7fcb-413e-7aa0" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c111-68b0-416f-6232" name="Secondary Weapons" hidden="false" collective="false" import="true" targetId="fdb0-33d1-0e5c-353c" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0e3-b893-bf0c-546c" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="895b-af6a-0ab4-8d2d" name="Grenade" hidden="false" collective="false" import="true" targetId="d82f-463e-79ca-768e" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4026-27b2-ff29-562a" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="14.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9499-72a7-fa93-e032" name="Officer" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5e41-2fea-9c4b-399c" name="Officer" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">5</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">3</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b9b9-c998-11dd-d838" name="New CategoryLink" hidden="false" targetId="3c47-be9a-ee6e-cdc3" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3ab7-fd1d-94e9-4964" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="9c81-912c-eae5-eb93" name="Bolt Rifle" hidden="false" collective="false" import="true" targetId="6562-f256-691e-f874" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c93-2862-b95d-7de6" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="991a-70c1-5859-2b75" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7181-1e7c-4a16-065f" name="Grenade" hidden="false" collective="false" import="true" targetId="d82f-463e-79ca-768e" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c2a-a3a3-b16e-3bfe" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d410-caa7-e6c7-b61d" name="Robotic Hound" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c837-2477-3f3b-39bc" name="Robotic Hound" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">8</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">2</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="1c1c-01f9-f464-78b2" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="31f8-0a81-e4ad-7f71" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="555f-fd6a-c39e-c5f9" name="Claws and Teeth (Ro-botic Hound Only)" hidden="false" collective="false" import="true" targetId="bc8c-19ac-cf0d-3350" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c19-bb7a-f687-7439" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2833-08be-fc6f-bfc2" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="80bc-9116-567e-d146" name="Cyborg Specialist" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b080-adb1-5d7c-fbdf" name="Cyborg Specialist" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">6</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">10</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f2c5-829c-fc24-c530" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5cbd-b27a-07bf-0ed1" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="0937-17c5-56d5-70ac" name="Power Gauntlet" hidden="false" collective="false" import="true" targetId="b8be-351c-cf5d-9e89" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b67-0eb0-6fac-49f9" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00eb-d252-cb4e-b8bf" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8e5a-532c-a8e0-c8c9" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3507-8f97-1788-5cd4" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a8bd-9f34-883a-ca80" name="Flamethrower" hidden="false" collective="false" import="true" targetId="8373-b025-89e3-a764" type="selectionEntry"/>
+            <entryLink id="dbd5-7862-1d82-8e58" name="Rocket Launcher" hidden="false" collective="false" import="true" targetId="8c65-9501-6c40-ecb8" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="bee1-065b-04d4-c8b7" name="Relics" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="3b69-fe3d-ed58-2ee9" name="Plasma Riot Shield" hidden="false" collective="false" import="true" targetId="143d-ab71-2927-73a3" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a20e-e8d0-677b-e625" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6291-c629-d225-c5e1" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5510-3296-8a22-5555" name="Grenade" hidden="false" collective="false" import="true" targetId="d82f-463e-79ca-768e" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77f8-faac-0705-2e96" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="14.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="104f-6441-2bb4-f115" name="Cyborg Marksman" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d9ef-2f2a-9f15-f2f1" name="Cyborg Marksman" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">5</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">10</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e189-e035-259b-f9e2" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f62f-909d-2651-8d35" name="Alpha Skills" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="0432-5789-48de-1ba5" name="Deadeye 1" hidden="false" collective="false" import="true" targetId="f2df-2474-1d3f-d669" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="298a-95c0-8960-c24f" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40b8-4758-4353-94e7" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="bfa5-4bfb-f2f3-e963" name="Deadeye 2" hidden="false" collective="false" import="true" targetId="1d6e-54ae-45f8-1214" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60e6-c0a3-e1a9-c984" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e50-471d-8a49-0e6f" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="dbf2-8419-7d22-5d07" name="Primary Weapons" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="b64b-3755-77d2-26a7" name="Bolt Rifle (Scoped)" hidden="false" collective="false" import="true" targetId="3424-e34f-abbf-5d71" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c95-bd0b-d25d-e9b4" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfbb-2737-ce03-0689" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c724-1af6-b1f4-284b" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="39e8-bd01-fa24-72aa" name="Razor Net" hidden="false" collective="false" import="true" targetId="519c-7439-29ac-a73b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64a8-cf3b-8f96-23cc" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74cf-a159-5483-9dee" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="14.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5ca5-d695-decb-c9a2" name="Precog (Unique/Psychic)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2829-f759-e281-11da" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="5523-b74b-1d55-3903" name="Precog (Unique/Psychic)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">5</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5217-1aca-5fa8-3343" name="Psychic Ability 2" hidden="false" targetId="56df-d402-bd72-c646" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ce09-2e8f-bc56-98d8" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+        <categoryLink id="2601-06b2-ca06-fe67" name="Psychic" hidden="false" targetId="65e2-baf1-a3e7-df11" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3759-fc44-070b-231c" name="Alpha Skill" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="cefa-0290-165c-c95b" name="Stealth 1" hidden="false" collective="false" import="true" targetId="d9d8-e57a-e5bf-06e6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e070-400b-4e07-56db" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4abf-7e0c-0d48-9f8c" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c464-c461-3f74-5cea" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="c8b8-327e-4a20-7753" name="Bolt Rifle" hidden="false" collective="false" import="true" targetId="6562-f256-691e-f874" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3621-ccb4-e905-33a6" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fe7-faf5-378c-9a27" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="12.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="be33-7dae-bb15-76dc" name="Breaching Mech (Unique/Mech)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4431-4b7d-ebf2-6d1b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="fbc0-dd88-1d8c-7da1" name="Breaching Mech (Unique/Mech)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">7</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">10</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="cb01-578e-6344-bdd1" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+        <categoryLink id="5439-01f0-4165-0bd6" name="Mech" hidden="false" targetId="5180-40a8-602d-2721" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6254-0675-39d0-5288" name="Secondary Mech Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89d8-7512-6905-48b4" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="596c-f47b-a92c-3238" name="Chain Blade (m)" hidden="false" collective="false" import="true" targetId="aef3-0291-2aea-ab01" type="selectionEntry"/>
+            <entryLink id="7e49-8cf6-5ec1-0566" name="Crushing Claw (m)" hidden="false" collective="false" import="true" targetId="b599-0c57-0372-f90b" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3e7f-f9b4-8f34-67c3" name="Primary Mech Weapon" hidden="false" collective="false" import="true" targetId="974d-693c-5f0a-7190" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55b8-8289-0a5f-9f87" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bc8c-19ac-cf0d-3350" name="Claws and Teeth (Ro-botic Hound Only)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3e3d-222a-2dfd-f4cf" name="Claws and Teeth (Ro-botic Hound Only)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in close combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b8be-351c-cf5d-9e89" name="Power Gauntlet" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e56b-0c94-9b69-d968" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="2611-f06d-bfd6-b238" name="Power Gauntlet" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in close combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="519c-7439-29ac-a73b" name="Razor Net" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbcb-60e6-1184-7162" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="b456-64d7-0386-0e34" name="Razor Net" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">12</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">0</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">Work out all ranged attacks like Cover Fire; All targets hit by a Razor Net must apply -3 movement value and -3 initiative value until the end of the turn</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cc3d-a433-fa2c-e223" name="Custom Twin Blasters" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="f539-fcc6-c073-1faf" name="Custom Twin Blasters" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">3</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+1</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2129-8e3e-6cb8-41c3" name="Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="afc1-5ed6-2792-048c" name="Bolt Pistol" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">12</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+2</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in CC; Cannot be used to execute Cover Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1425-3272-5d85-45f4" name="Subcompact Bolt Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="a131-84a2-ea49-c106" name="Subcompact Bolt Gun" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">18</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+2</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in CC; When used to execute a Focus Fire Action, the action is worked out like a normal Fire Order; No -1 initiative modi-fier applied for moving and shooting</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6562-f256-691e-f874" name="Bolt Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="4f69-5e03-67ed-f008" name="Bolt Rifle" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3424-e34f-abbf-5d71" name="Bolt Rifle (Scoped)" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbcb-60e6-1184-7162" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="c100-2835-d9b7-0aa2" name="Bolt Rifle (Scoped)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">36</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">If used to execute an Advance Order, read all stats like a normal Bolt Rifle and apply -1 initiative modifier to attack roll as normal</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e21b-8781-997e-0f6c" name="Heavy Bolt Repeater" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="d4e7-dd7a-e21a-e11b" name="Heavy Bolt Repeater" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">Work out all ranged attacks like Cover Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a60a-b9d2-69c0-9600" name="Plasma Shotgun" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="86dc-542a-c9b7-fc46" name="Plasma Shotgun" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">18</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in CC; Do not apply -1 initiative modifier to attack roll for moving and shooting; When used to execute a Focus Fire Ac-tion, the action is worked out like a normal Fire Order</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8373-b025-89e3-a764" name="Flamethrower" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e56b-0c94-9b69-d968" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="28fd-de43-0166-0216" name="Flamethrower" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">18</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+5</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">Work out all ranged attacks like Cover Fire, but target does not add positive initiative modifiers to their dodge roll for cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8c65-9501-6c40-ecb8" name="Rocket Launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e56b-0c94-9b69-d968" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="7e39-7ce9-361a-e495" name="Rocket Launcher" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+7</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">Work out all ranged attacks like Cover Fire, but target does not add positive initiative modifiers to their dodge roll for cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="29a6-602b-d1c4-1172" name="Smoke Grenade" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="ac7e-056b-6087-96c7" name="Smoke Grenade" hidden="false" typeId="b156-a531-d7e5-2ffc" typeName="Grenade">
+          <characteristics>
+            <characteristic name="Range" typeId="1d65-f5d5-69f5-5b14">12</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="e0f2-cd4f-c267-fe03">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="4c05-15b8-bd6f-768a">na</characteristic>
+            <characteristic name="Special Rules" typeId="507f-99b3-e2ce-65fe">One-time use per grenade taken; No line-of-sight necessary for use and can be thrown over barricades up to 3” tall; Work out all ranged attacks like Cover Fire, but the grenade automatically hits and target area fills with smoke and creates a momentary full cover—but passable—terrain piece that is 4” round and 6” tall for the entirety of this round of battle and the next</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a4cf-43f6-5dd9-de6f" name="Frag Grenade" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="30ce-e7ba-bfd7-3f0e" name="Frag Grenade" hidden="false" typeId="b156-a531-d7e5-2ffc" typeName="Grenade">
+          <characteristics>
+            <characteristic name="Range" typeId="1d65-f5d5-69f5-5b14">12</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="e0f2-cd4f-c267-fe03">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="4c05-15b8-bd6f-768a">+7</characteristic>
+            <characteristic name="Special Rules" typeId="507f-99b3-e2ce-65fe">One-time use per grenade taken; No line-of-sight necessary for use and can be thrown over barricades up to 3” tall; Work out all ranged attacks like Cover Fire, but target does not add positive initi-ative modifiers to their dodge roll for cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5719-3b46-dd60-e197" name="Plasma Grenade" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="5aaf-a06f-9bd8-631d" name="Plasma Grenade" hidden="false" typeId="b156-a531-d7e5-2ffc" typeName="Grenade">
+          <characteristics>
+            <characteristic name="Range" typeId="1d65-f5d5-69f5-5b14">12</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="e0f2-cd4f-c267-fe03">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="4c05-15b8-bd6f-768a">+5</characteristic>
+            <characteristic name="Special Rules" typeId="507f-99b3-e2ce-65fe">One-time use per grenade taken; No line-of-sight necessary for use and can be thrown over barricades up to 3” tall; Work out all ranged attacks like Cover Fire, but target does not add positive initi-ative modifiers to their dodge roll of any kind</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aef3-0291-2aea-ab01" name="Chain Blade (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="578f-42c5-006a-5595" name="Chain Blade (m)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+5</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in close combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b599-0c57-0372-f90b" name="Crushing Claw (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="821a-f11e-6120-41cf" name="Crushing Claw (m)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+7</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in close combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dd48-cfd6-7051-44e2" name="Ion Cannon (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="7c9a-8d06-394c-8e7b" name="Ion Cannon (m)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">36</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">In addition to applying damage, if a target is hit by the Ion Cannon, it drops to a movement value of 2 and initiative value of 2 until the end of the turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a7cc-26fd-a42b-0152" name="Heavy Chain Gun (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="98d6-61cd-49f7-f408" name="Heavy Chain Gun (m)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">When used to execute a Focus Fire Action, the action is worked out like a normal Fire Order</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2479-4ee5-49fa-85f6" name="Flame Cannon (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3318-0f16-0c7b-900c" name="Flame Cannon (m)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">18</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+5</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">Work out all ranged attacks like Cover Fire, but target does not add positive initiative modifiers to their dodge roll for cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5bd7-8442-4e92-110f" name="Plasma Cannon (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f141-8303-4db7-7316" name="Plasma Cannon (m)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attach Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+5</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">Work out all ranged attacks like Cover Fire, but target does not add positive initiative modifiers to their dodge roll of any kind</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7e8a-23a3-1e3a-82a4" name="Jetpack" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="4a14-65e1-ab1a-a2a1" name="Jetpack" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Grants +1 movement value to the soldier and the soldier ignores all terrain rules while the model moves.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="143d-ab71-2927-73a3" name="Plasma Riot Shield" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec80-5238-025e-5d9a" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e56b-0c94-9b69-d968" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="542f-f373-d803-4d1e" name="Plasma Riot Shield" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Grants a +1 initiative modifier to the soldier when making a dodge roll or close combat roll</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="76a7-fbfc-4309-1438" name="Kevlar Under Armor" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="9f43-e03b-2722-fa37" name="Kevlar Under Armor" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Once per game, before applying damage to the soldier, the player may add to the soldier +2 armor value.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9be4-b80f-1ae8-cc87" name="Steroid Pack" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="c591-936d-d0e7-d5d5" name="Steroid Pack" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Once per game, before executing an assigned order, the soldier gains +1 movement and may take a spe-cial action during the Special Action Phase, for this turn only.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="92b2-b6cf-9a0a-f37f" name="Opiate Pack" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="76c0-b05e-d526-d084" name="Opiate Pack" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Once per game, when executing a Down Order, the soldier regains 4 health value, up to initial maximum.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1a62-0df2-719f-0f74" name="Com-link" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="f886-a4a6-2381-3438" name="Com-link" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Any Skills possessed by the soldier have an additional 4” radius of effect.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6f7c-597a-8065-fcb0" name="Auto Targeting System" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="7cc0-b244-eb30-7899" name="Auto Targeting System" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Once per game, before executing any ranged attack with any weapon, the soldier gains a +1 initiative modifier to their attack roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bd6b-8c89-028c-0642" name="Accuracy Lock" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a4b4-c50c-af7d-7590" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="37ed-b76e-904b-964f" name="Accuracy Lock" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">When executing a Fire or Advance Order, ranged attacks made by this soldier prohibit the target from adding initiative modifiers to their dodge roll for being behind cover and/or Down.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="9333-b4a5-39cb-51ee" name="Relics" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="d5a6-0710-1090-f3d1" name="Jetpack" hidden="false" collective="false" import="true" targetId="7e8a-23a3-1e3a-82a4" type="selectionEntry"/>
+        <entryLink id="b559-5e53-afe8-2c3d" name="Plasma Riot Shield" hidden="false" collective="false" import="true" targetId="143d-ab71-2927-73a3" type="selectionEntry"/>
+        <entryLink id="d036-0885-8182-e106" name="Kevlar Under Armor" hidden="false" collective="false" import="true" targetId="76a7-fbfc-4309-1438" type="selectionEntry"/>
+        <entryLink id="3ea0-9d86-da5d-baf6" name="Steroid Pack" hidden="false" collective="false" import="true" targetId="9be4-b80f-1ae8-cc87" type="selectionEntry"/>
+        <entryLink id="f6ac-169e-a185-15d7" name="Opiate Pack" hidden="false" collective="false" import="true" targetId="92b2-b6cf-9a0a-f37f" type="selectionEntry"/>
+        <entryLink id="8fe4-a7cc-5e9f-a744" name="Com-link" hidden="false" collective="false" import="true" targetId="1a62-0df2-719f-0f74" type="selectionEntry"/>
+        <entryLink id="07d1-74ec-869f-4542" name="Auto Targeting System" hidden="false" collective="false" import="true" targetId="6f7c-597a-8065-fcb0" type="selectionEntry"/>
+        <entryLink id="dc78-6d8a-bf02-f556" name="Accuracy Lock" hidden="false" collective="false" import="true" targetId="bd6b-8c89-028c-0642" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="974d-693c-5f0a-7190" name="Primary Mech Weapon" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="0780-49a0-b460-a26e" name="Chain Blade (m)" hidden="false" collective="false" import="true" targetId="aef3-0291-2aea-ab01" type="selectionEntry"/>
+        <entryLink id="f213-5107-5216-776d" name="Crushing Claw (m)" hidden="false" collective="false" import="true" targetId="b599-0c57-0372-f90b" type="selectionEntry"/>
+        <entryLink id="df4c-cbb9-dfc8-dc85" name="Ion Cannon (m)" hidden="false" collective="false" import="true" targetId="dd48-cfd6-7051-44e2" type="selectionEntry"/>
+        <entryLink id="13a3-87b0-b7a3-dcd7" name="Heavy Chain Gun (m)" hidden="false" collective="false" import="true" targetId="a7cc-26fd-a42b-0152" type="selectionEntry"/>
+        <entryLink id="4d32-b206-f6bc-eb16" name="Flame Cannon (m)" hidden="false" collective="false" import="true" targetId="2479-4ee5-49fa-85f6" type="selectionEntry"/>
+        <entryLink id="e154-7c5e-1886-a297" name="Plasma Cannon (m)" hidden="false" collective="false" import="true" targetId="5bd7-8442-4e92-110f" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="97ba-3d64-85ee-80de" name="Secondary Mech Weapon" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="9c02-90a1-b739-3b39" name="Chain Blade (m)" hidden="false" collective="false" import="true" targetId="aef3-0291-2aea-ab01" type="selectionEntry"/>
+        <entryLink id="0421-a938-4780-96b2" name="Crushing Claw (m)" hidden="false" collective="false" import="true" targetId="b599-0c57-0372-f90b" type="selectionEntry"/>
+        <entryLink id="5bdc-9b45-15a5-76a4" name="Ion Cannon (m)" hidden="false" collective="false" import="true" targetId="dd48-cfd6-7051-44e2" type="selectionEntry"/>
+        <entryLink id="fb83-b67e-d330-1fa3" name="Heavy Chain Gun (m)" hidden="false" collective="false" import="true" targetId="a7cc-26fd-a42b-0152" type="selectionEntry"/>
+        <entryLink id="7527-34e6-09fb-25dc" name="Flame Cannon (m)" hidden="false" collective="false" import="true" targetId="2479-4ee5-49fa-85f6" type="selectionEntry"/>
+        <entryLink id="5729-e7c3-2008-df1f" name="Plasma Cannon (m)" hidden="false" collective="false" import="true" targetId="5bd7-8442-4e92-110f" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="d82f-463e-79ca-768e" name="Grenade" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="9ed7-4223-e862-69c8" name="Smoke Grenade" hidden="false" collective="false" import="true" targetId="29a6-602b-d1c4-1172" type="selectionEntry"/>
+        <entryLink id="d9d3-aa3b-bfdb-8a5f" name="Frag Grenade" hidden="false" collective="false" import="true" targetId="a4cf-43f6-5dd9-de6f" type="selectionEntry"/>
+        <entryLink id="d319-2579-8266-e229" name="Plasma Grenade" hidden="false" collective="false" import="true" targetId="5719-3b46-dd60-e197" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="d4d3-1444-2859-5283" name="Primary Weapons" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="c2e5-f55c-1d95-09c2" name="Power Gauntlet" hidden="false" collective="false" import="true" targetId="b8be-351c-cf5d-9e89" type="selectionEntry"/>
+        <entryLink id="9ab2-1213-fd53-9d5e" name="Razor Net" hidden="false" collective="false" import="true" targetId="519c-7439-29ac-a73b" type="selectionEntry"/>
+        <entryLink id="b3a5-1cef-b781-2c84" name="Custom Twin Blasters" hidden="false" collective="false" import="true" targetId="cc3d-a433-fa2c-e223" type="selectionEntry"/>
+        <entryLink id="2c31-956b-5435-de9c" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="2129-8e3e-6cb8-41c3" type="selectionEntry"/>
+        <entryLink id="1ad9-2c80-0851-2053" name="Bolt Rifle" hidden="false" collective="false" import="true" targetId="6562-f256-691e-f874" type="selectionEntry"/>
+        <entryLink id="c94e-e869-e004-bf25" name="Bolt Rifle (Scoped)" hidden="false" collective="false" import="true" targetId="3424-e34f-abbf-5d71" type="selectionEntry"/>
+        <entryLink id="f4ae-5f89-53fe-0f83" name="Subcompact Bolt Gun" hidden="false" collective="false" import="true" targetId="1425-3272-5d85-45f4" type="selectionEntry"/>
+        <entryLink id="bd30-39b1-7df4-ad87" name="Heavy Bolt Repeater" hidden="false" collective="false" import="true" targetId="e21b-8781-997e-0f6c" type="selectionEntry"/>
+        <entryLink id="21cc-933c-d8d7-5f9b" name="Plasma Shotgun" hidden="false" collective="false" import="true" targetId="a60a-b9d2-69c0-9600" type="selectionEntry"/>
+        <entryLink id="1945-8d56-3ac8-2610" name="Flamethrower" hidden="false" collective="false" import="true" targetId="8373-b025-89e3-a764" type="selectionEntry"/>
+        <entryLink id="c486-9bff-86fa-ce63" name="Rocket Launcher" hidden="false" collective="false" import="true" targetId="8c65-9501-6c40-ecb8" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="fdb0-33d1-0e5c-353c" name="Secondary Weapons" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="06e3-b0c7-a356-4353" name="Power Gauntlet" hidden="false" collective="false" import="true" targetId="b8be-351c-cf5d-9e89" type="selectionEntry"/>
+        <entryLink id="22fd-6b3d-8979-2780" name="Razor Net" hidden="false" collective="false" import="true" targetId="519c-7439-29ac-a73b" type="selectionEntry"/>
+        <entryLink id="f437-52b7-f9ff-2779" name="Custom Twin Blasters" hidden="false" collective="false" import="true" targetId="cc3d-a433-fa2c-e223" type="selectionEntry"/>
+        <entryLink id="107c-555f-5b3d-e9d5" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="2129-8e3e-6cb8-41c3" type="selectionEntry"/>
+        <entryLink id="fc35-c1a2-40bf-6a5d" name="Bolt Rifle" hidden="false" collective="false" import="true" targetId="6562-f256-691e-f874" type="selectionEntry"/>
+        <entryLink id="c9b5-7b36-24cb-f67f" name="Bolt Rifle (Scoped)" hidden="false" collective="false" import="true" targetId="3424-e34f-abbf-5d71" type="selectionEntry"/>
+        <entryLink id="c8a4-c04e-b02e-f68d" name="Subcompact Bolt Gun" hidden="false" collective="false" import="true" targetId="1425-3272-5d85-45f4" type="selectionEntry"/>
+        <entryLink id="c4d2-ad24-8b02-c9f5" name="Heavy Bolt Repeater" hidden="false" collective="false" import="true" targetId="e21b-8781-997e-0f6c" type="selectionEntry"/>
+        <entryLink id="4a1e-25a7-a6b7-3cbe" name="Plasma Shotgun" hidden="false" collective="false" import="true" targetId="a60a-b9d2-69c0-9600" type="selectionEntry"/>
+        <entryLink id="ab00-2cda-d767-c3eb" name="Flamethrower" hidden="false" collective="false" import="true" targetId="8373-b025-89e3-a764" type="selectionEntry"/>
+        <entryLink id="4382-7a33-5e5c-a8bc" name="Rocket Launcher" hidden="false" collective="false" import="true" targetId="8c65-9501-6c40-ecb8" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile id="a78f-5f96-39b6-00c6" name="Psychic Ability" hidden="false" typeId="f7f1-057c-64de-8b10" typeName="Psychic Ability">
+      <characteristics>
+        <characteristic name="School Order" typeId="1205-2b68-f272-49f6">Any 3 abilities from either the School of Order OR Plasmids</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="56df-d402-bd72-c646" name="Psychic Ability 2" hidden="false" typeId="f7f1-057c-64de-8b10" typeName="Psychic Ability">
+      <characteristics>
+        <characteristic name="School Order" typeId="1205-2b68-f272-49f6">All abilities from the School of Time</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
