@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<dataIndex battleScribeVersion="2.03" name="StarBreach" indexUrl="https://github.com/andreanespeca/StarBreach" xmlns="http://www.battlescribe.net/schema/dataIndexSchema">
+<dataIndex battleScribeVersion="2.03" name="StarBreach" indexUrl="https://raw.githubusercontent.com/andreanespeca/StarBreach/master/index.bsi" xmlns="http://www.battlescribe.net/schema/dataIndexSchema">
   <dataIndexEntries>
     <dataIndexEntry filePath="StarBreach.gstz" dataType="gamesystem" dataId="d284-e42e-1c51-a4fb" dataName="StarBreach" dataBattleScribeVersion="2.03" dataRevision="1"/>
     <dataIndexEntry filePath="L&apos;Orani_Empire.catz" dataType="catalogue" dataId="4f62-f7f5-4489-6376" dataName="L&apos;Orani Empire" dataBattleScribeVersion="2.03" dataRevision="1"/>
