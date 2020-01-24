@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataIndex battleScribeVersion="2.03" name="StarBreach" indexUrl="https://github.com/andreanespeca/StarBreach" xmlns="http://www.battlescribe.net/schema/dataIndexSchema">
+  <dataIndexEntries>
+    <dataIndexEntry filePath="StarBreach.gstz" dataType="gamesystem" dataId="d284-e42e-1c51-a4fb" dataName="StarBreach" dataBattleScribeVersion="2.03" dataRevision="1"/>
+    <dataIndexEntry filePath="L&apos;Orani_Empire.catz" dataType="catalogue" dataId="4f62-f7f5-4489-6376" dataName="L&apos;Orani Empire" dataBattleScribeVersion="2.03" dataRevision="1"/>
+    <dataIndexEntry filePath="Hive_Cult.catz" dataType="catalogue" dataId="5249-ddb5-cebf-5738" dataName="Hive Cult" dataBattleScribeVersion="2.03" dataRevision="1"/>
+    <dataIndexEntry filePath="The_Hive.catz" dataType="catalogue" dataId="03ec-e283-6528-d00e" dataName="The Hive" dataBattleScribeVersion="2.03" dataRevision="1"/>
+    <dataIndexEntry filePath="Intergalactic_Marshal.catz" dataType="catalogue" dataId="1751-0089-fe00-b7d4" dataName="Intergalactic Marshal" dataBattleScribeVersion="2.03" dataRevision="1"/>
+    <dataIndexEntry filePath="The_Path.catz" dataType="catalogue" dataId="9700-b154-5f02-9a89" dataName="The Path" dataBattleScribeVersion="2.03" dataRevision="1"/>
+    <dataIndexEntry filePath="The_Inquisition.catz" dataType="catalogue" dataId="c9d0-ee07-9e0b-a93c" dataName="The Inquisition" dataBattleScribeVersion="2.03" dataRevision="1"/>
+    <dataIndexEntry filePath="Legion_of_Mankind.catz" dataType="catalogue" dataId="d19f-0c65-f3e3-66a8" dataName="Legion of Mankind" dataBattleScribeVersion="2.03" dataRevision="1"/>
+    <dataIndexEntry filePath="Hunters.catz" dataType="catalogue" dataId="9fac-e8f5-9c3d-3d4c" dataName="Hunters" dataBattleScribeVersion="2.03" dataRevision="1"/>
+    <dataIndexEntry filePath="Continuum_Syndicate.catz" dataType="catalogue" dataId="64d3-7c09-cc2e-50af" dataName="Continuum Syndicate" dataBattleScribeVersion="2.03" dataRevision="1"/>
+    <dataIndexEntry filePath="Machine_Cult.catz" dataType="catalogue" dataId="bb59-d7da-f0e8-07ca" dataName="Machine Cult" dataBattleScribeVersion="2.03" dataRevision="1"/>
+    <dataIndexEntry filePath="Terror_Legion.catz" dataType="catalogue" dataId="bfa9-347a-3ab8-b0c0" dataName="Terror Legion" dataBattleScribeVersion="2.03" dataRevision="1"/>
+    <dataIndexEntry filePath="The_Ancient_Machine.catz" dataType="catalogue" dataId="503d-61d4-45e7-f463" dataName="The Ancient Machine" dataBattleScribeVersion="2.03" dataRevision="1"/>
+    <dataIndexEntry filePath="U&apos;Rak_Warlords.catz" dataType="catalogue" dataId="a724-c097-6fba-d590" dataName="U&apos;Rak Warlords" dataBattleScribeVersion="2.03" dataRevision="1"/>
+    <dataIndexEntry filePath="Corrupted_L&apos;Orani.catz" dataType="catalogue" dataId="d6b5-3173-054c-cd16" dataName="Corrupted L&apos;Orani" dataBattleScribeVersion="2.03" dataRevision="1"/>
+    <dataIndexEntry filePath="Terror_Cult.catz" dataType="catalogue" dataId="6036-21bf-7953-d4d2" dataName="Terror Cult" dataBattleScribeVersion="2.03" dataRevision="1"/>
+    <dataIndexEntry filePath="Coven_Empire.catz" dataType="catalogue" dataId="4df8-2eaa-3708-33ae" dataName="Coven Empire" dataBattleScribeVersion="2.03" dataRevision="1"/>
+    <dataIndexEntry filePath="The_Dark_Path.catz" dataType="catalogue" dataId="cccc-5175-7d8a-6726" dataName="The Dark Path" dataBattleScribeVersion="2.03" dataRevision="1"/>
+    <dataIndexEntry filePath="Terrors_of_Abaddon.catz" dataType="catalogue" dataId="177a-dfc0-b75b-cbcd" dataName="Terrors of Abaddon" dataBattleScribeVersion="2.03" dataRevision="1"/>
+  </dataIndexEntries>
+</dataIndex>
