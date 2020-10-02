@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="4f62-f7f5-4489-6376" name="L&apos;Orani Empire" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="d284-e42e-1c51-a4fb" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="629f-f123-904c-7e8a" name="L’Orani Prince (Alpha)" hidden="false" collective="false" import="true" targetId="1323-638a-27d1-20fd" type="selectionEntry"/>
+    <entryLink id="d017-9fde-5458-13a4" name="Royal Bodyguard" hidden="false" collective="false" import="true" targetId="93a7-a336-2f8e-6aed" type="selectionEntry"/>
+    <entryLink id="184c-6426-28bb-8de1" name="Warrior" hidden="false" collective="false" import="true" targetId="7fa2-70ee-4dce-01ac" type="selectionEntry"/>
+    <entryLink id="ce52-67d6-7760-8ff9" name="Squire" hidden="false" collective="false" import="true" targetId="ecd9-b6d3-48ce-7090" type="selectionEntry"/>
+    <entryLink id="0bd0-e23c-9e49-1639" name="L’Orani Assassin" hidden="false" collective="false" import="true" targetId="d121-da4e-5505-2add" type="selectionEntry"/>
+    <entryLink id="42b2-f6be-205d-f1f1" name="L’Orani Healer (Unique/Psychic)" hidden="false" collective="false" import="true" targetId="0248-b144-fb78-3889" type="selectionEntry"/>
+    <entryLink id="8803-df81-dfce-b3aa" name="L’Orani Oracle (Unique/Psychic)" hidden="false" collective="false" import="true" targetId="ff32-775f-bb09-7832" type="selectionEntry"/>
+    <entryLink id="1e09-08bb-d21d-0ecd" name="L’Orani Weapon Platform (Mech)" hidden="false" collective="false" import="true" targetId="33ac-010a-371b-c9b6" type="selectionEntry"/>
+    <entryLink id="af3a-6ec5-c827-011f" name="L’Orani Walker (Unique/Mech)" hidden="false" collective="false" import="true" targetId="33f6-6dd5-68ec-b0a9" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="8d56-75ed-422b-a9b1" name="Ancient Spring" publicationId="9ed2-b94e-33e0-364e" page="74" hidden="false">
+      <description>When executing a Mend Order, all L’Orani soldiers and specialists automatically regain up to +4 health, with no need to roll a D6</description>
+    </rule>
+    <rule id="5ba7-5517-2ed2-98fd" name="Starfire Dance" publicationId="9ed2-b94e-33e0-364e" page="74" hidden="false">
+      <description>When executing an Assault Order or Special Action, all L’Orani soldiers and specialists ignore the “difficult terrain” and “higher ground” rules. Further, the assaulting soldier cannot be targeted by a sprung Ambush order and an enemy soldier or specialist executing a Fire re-sponse order to the assault must apply an additional -1 initiative modifier to their attack roll.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="1323-638a-27d1-20fd" name="L’Orani Prince (Alpha)" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="increment" field="9e37-50a0-9764-fda5" value="3.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b9b-3f20-545d-1679" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="87a0-b411-66b9-d6b9" name="L’Orani Prince (Alpha)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">7</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">6</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="65a2-8e9f-4049-6ea6" name="New CategoryLink" hidden="false" targetId="65fa-de41-86ca-79a3" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2bc5-8bb4-baec-88cc" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="3ef5-2e57-2b06-4865" name="Sunstone Saber" hidden="false" collective="false" import="true" targetId="db93-23ca-9f2e-288d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fae-575e-d10a-cdf1" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec8d-cc93-6c22-ffaa" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3995-5195-5249-aed1" name="Primary Weapons" hidden="false" collective="false" import="true" targetId="9894-71d7-6b41-23c3" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b10c-4a4f-b3c6-08f6" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f18f-ae19-2a98-62e3" name="Relics" hidden="false" collective="false" import="true" targetId="003d-d198-c514-a31a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0956-73e3-0c7a-80e8" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c20d-1375-6cf3-33d5" name="Grenade" hidden="false" collective="false" import="true" targetId="db29-bbfe-3995-d02b" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1f1-f27a-2122-ebe0" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4b9b-3f20-545d-1679" name="Alpha Skills" hidden="false" collective="false" import="true" targetId="3c9c-6b8a-738d-b4ba" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9392-0dc9-6f73-1c9a" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="93a7-a336-2f8e-6aed" name="Royal Bodyguard" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e10d-379f-6959-2e17" name="Royal Bodyguard" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">7</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">5</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5012-faa8-0d4e-f764" name="New CategoryLink" hidden="false" targetId="3c47-be9a-ee6e-cdc3" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1bc2-68ac-d709-3ad2" name="Primary Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="927e-03fd-ad94-d692" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="03d6-103b-85ed-5649" name="Starfire Rifle" hidden="false" collective="false" import="true" targetId="4fc4-36a2-7939-27ba" type="selectionEntry"/>
+            <entryLink id="dd50-e505-9e65-0b42" name="Starfire Shotgun" hidden="false" collective="false" import="true" targetId="7471-ddba-351f-8755" type="selectionEntry"/>
+            <entryLink id="e745-1b19-046a-55fc" name="Starfire Devastator" hidden="false" collective="false" import="true" targetId="6d1f-7a93-c25f-af9c" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8f15-7891-8871-67cd" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="723c-4b34-a041-9567" name="Sunstone Blade" hidden="false" collective="false" import="true" targetId="b567-4fb0-4f05-ce72" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8769-807b-d771-a88d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa72-00be-80f6-3b0b" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6af7-76f4-a015-98e0" name="Grenade" hidden="false" collective="false" import="true" targetId="db29-bbfe-3995-d02b" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed2b-067e-c80e-a0c4" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="024e-6162-f935-f8aa" name="Relics" hidden="false" collective="false" import="true" targetId="003d-d198-c514-a31a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ab8-4d4e-881d-27d0" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="17.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7fa2-70ee-4dce-01ac" name="Warrior" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d9a1-1b84-cfce-f88c" name="Warrior" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">6</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="264e-b989-e901-5dc1" name="New CategoryLink" hidden="false" targetId="3c47-be9a-ee6e-cdc3" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6968-8e98-8a0b-2884" name="Primary Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="097c-7318-266e-9d1d" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e008-e884-9624-7460" name="Starfire Rifle" hidden="false" collective="false" import="true" targetId="4fc4-36a2-7939-27ba" type="selectionEntry"/>
+            <entryLink id="cbb7-ccbf-c9ee-2016" name="Starfire Shotgun" hidden="false" collective="false" import="true" targetId="7471-ddba-351f-8755" type="selectionEntry"/>
+            <entryLink id="04ba-df3c-b9c9-ce41" name="Starfire Devastator" hidden="false" collective="false" import="true" targetId="6d1f-7a93-c25f-af9c" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a640-9810-22f0-406d" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="17aa-bd7f-93a4-d5e9" name="Starfire Pistol" hidden="false" collective="false" import="true" targetId="1943-52b2-8440-11b0" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b19-84cd-1cb5-3cbf" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eec1-99b7-b46a-978e" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e653-e9f5-c600-df6d" name="Relics" hidden="false" collective="false" import="true" targetId="003d-d198-c514-a31a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6d8-f746-b144-df58" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="af4a-adb3-d5d4-09ee" name="Grenade" hidden="false" collective="false" import="true" targetId="db29-bbfe-3995-d02b" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd8e-e6fa-8987-5d32" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="13.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ecd9-b6d3-48ce-7090" name="Squire" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6a9c-c0bc-76f6-0755" name="Squire" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">6</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">3</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="89d2-fbf1-7190-2a44" name="New CategoryLink" hidden="false" targetId="3c47-be9a-ee6e-cdc3" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="07e7-a1ae-4006-da29" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="57eb-c30c-eaaa-04e1" name="Starfire Rifle" hidden="false" collective="false" import="true" targetId="4fc4-36a2-7939-27ba" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="793e-174a-4e7c-5a7a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da6d-4fcb-7942-cf86" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="dc0d-f1b7-cd48-a751" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="0a30-8476-8b8f-6300" name="Starfire Pistol" hidden="false" collective="false" import="true" targetId="1943-52b2-8440-11b0" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16d4-a245-aa46-ff4d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3772-b0f6-c3ba-ac6b" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5f80-ecf3-0340-26d6" name="Relics" hidden="false" collective="false" import="true" targetId="003d-d198-c514-a31a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8445-8faa-30ad-169a" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d121-da4e-5505-2add" name="L’Orani Assassin" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1beb-ff2f-ff83-9d58" name="L’Orani Assassin" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">7</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">6</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c050-ab11-b94a-f7f6" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5628-0786-5cb8-1a24" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="50c1-2868-529f-a15e" name="Sunstone Shuriken" hidden="false" collective="false" import="true" targetId="d7d1-6009-d17f-218c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="880e-ca57-4291-826e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dd8-b79c-1639-4318" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9189-f54a-626e-bc8d" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="3e35-201a-d7c2-d3dd" name="Sunstone Saber" hidden="false" collective="false" import="true" targetId="db93-23ca-9f2e-288d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80cb-b587-acb1-1367" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b97-fc55-90e4-99bd" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="fdc7-e5c8-a33c-0c88" name="Grenade" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="f516-c99c-e062-dba6" name="Starflare Grenade" hidden="false" collective="false" import="true" targetId="ca34-f39d-5ebb-630e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53eb-1a00-7545-ba3e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e17-109b-ab06-c6ae" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2c39-8a51-fad5-91ed" name="Alpha Skills" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="7a5b-7d4c-dab0-2617" name="Stealth 1" hidden="false" collective="false" import="true" targetId="d9d8-e57a-e5bf-06e6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54ae-c687-cb58-fa55" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90cb-4f1a-40fc-9805" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="aea9-cad7-ee5a-eced" name="Relics" hidden="false" collective="false" import="true" targetId="003d-d198-c514-a31a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de78-7a0a-4ce4-2e0a" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0248-b144-fb78-3889" name="L’Orani Healer (Unique/Psychic)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f7c-3799-465f-90e1" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="16dc-b489-ca9d-13b0" name="L’Orani Healer (Unique/Psychic)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">6</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f980-0463-00bf-5b9f" name="Psychic Ability 1" hidden="false" targetId="9768-1173-d0a7-70b1" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c771-64ea-f634-0f1d" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+        <categoryLink id="8d5e-0014-c887-fc7b" name="Psychic" hidden="false" targetId="65e2-baf1-a3e7-df11" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0050-6c65-214d-a1fc" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="49d2-ad19-30f6-6fdd" name="Sunstone Blade" hidden="false" collective="false" import="true" targetId="b567-4fb0-4f05-ce72" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0951-b5ef-ea61-b372" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6171-49b0-87d6-b70f" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8206-2e62-38b6-7aa1" name="Relics" hidden="false" collective="false" import="true" targetId="003d-d198-c514-a31a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e036-d722-0de4-e8b6" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ff32-775f-bb09-7832" name="L’Orani Oracle (Unique/Psychic)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d717-18e2-5d35-3543" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="68b2-f67e-a2be-7b46" name="L’Orani Oracle (Unique/Psychic)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">6</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">5</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b88e-eaf1-83a8-b1da" name="Psychic Ability 2" hidden="false" targetId="be72-10ff-a0de-c80b" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3945-40d2-e474-c2c8" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+        <categoryLink id="e700-46ea-ccd6-58c6" name="Psychic" hidden="false" targetId="65e2-baf1-a3e7-df11" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1133-738b-c99d-5a4c" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="64d6-abe6-e117-bd5d" name="Sunstone Blade" hidden="false" collective="false" import="true" targetId="b567-4fb0-4f05-ce72" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13cd-d591-2bfb-8d86" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e33c-8197-965c-63e6" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="59ac-8add-bd7f-8641" name="Relics" hidden="false" collective="false" import="true" targetId="003d-d198-c514-a31a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0822-f747-44d0-2b9f" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="33ac-010a-371b-c9b6" name="L’Orani Weapon Platform (Mech)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2b70-aadb-89a9-cc57" name="L’Orani Weapon Platform (Mech)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">5</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">3</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">10</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3b76-badd-f3e9-f4b5" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+        <categoryLink id="0b02-b86a-460f-81fb" name="Mech" hidden="false" targetId="5180-40a8-602d-2721" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="88f3-3228-690e-b710" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12f1-8b04-c02d-354a" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="52fc-dde6-45c8-85c0" name="Starfire Cannon (m)" hidden="false" collective="false" import="true" targetId="2383-ca5f-d965-a5b8" type="selectionEntry"/>
+            <entryLink id="7376-21d8-f03d-8e92" name="Starfire Repeater (m)" hidden="false" collective="false" import="true" targetId="a6e8-d049-08b2-d2d3" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="13.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="33f6-6dd5-68ec-b0a9" name="L’Orani Walker (Unique/Mech)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ead8-7473-2bf2-f343" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="01d4-a779-8096-5885" name="L’Orani Walker (Unique/Mech)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">7</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">12</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="61cd-f823-a8de-c03e" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+        <categoryLink id="e97c-0d4a-c2e4-c92f" name="Mech" hidden="false" targetId="5180-40a8-602d-2721" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0251-62e6-1939-0322" name="Primary Weapon Mech" hidden="false" collective="false" import="true" targetId="f22d-c088-0c75-dd4d" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="346f-29bf-d2c6-5a45" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="777a-463d-0555-a0fb" name="Secondary Weapon Mech" hidden="false" collective="false" import="true" targetId="d3b9-cc54-7ad3-e3e3" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c55-a1ba-a3ff-f0f7" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="18.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1943-52b2-8440-11b0" name="Starfire Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="7e83-6f1d-dd32-7aab" name="Starfire Pistol" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">12</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in CC; Cannot be used for Cover Fire Order</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4fc4-36a2-7939-27ba" name="Starfire Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2c20-4c93-d2d0-4238" name="Starfire Rifle" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">30</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7471-ddba-351f-8755" name="Starfire Shotgun" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e229-1312-4668-86f5" name="Starfire Shotgun" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">12</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in CC; Compact; Unwieldy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6d1f-7a93-c25f-af9c" name="Starfire Devastator" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f2ee-8d81-b87e-c20b" name="Starfire Devastator" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">AoE, but target does not add positive initiative modifiers to their dodge roll for cover; Unwieldy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="db93-23ca-9f2e-288d" name="Sunstone Saber" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="8154-60c8-8fbc-1022" name="Sunstone Saber" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in close combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b567-4fb0-4f05-ce72" name="Sunstone Blade" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3fb2-b109-5872-f270" name="Sunstone Blade" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in close combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d7d1-6009-d17f-218c" name="Sunstone Shuriken" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="964b-4f5a-4b3d-504f" name="Sunstone Shuriken" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">12</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">Compact</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ca34-f39d-5ebb-630e" name="Starflare Grenade" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d121-da4e-5505-2add" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="6a21-840a-185a-e285" name="Starflare Grenade" hidden="false" typeId="b156-a531-d7e5-2ffc" typeName="Grenade">
+          <characteristics>
+            <characteristic name="Range" typeId="1d65-f5d5-69f5-5b14">12</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="e0f2-cd4f-c267-fe03">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="4c05-15b8-bd6f-768a">0</characteristic>
+            <characteristic name="Special Rules" typeId="507f-99b3-e2ce-65fe">Grenade, AOE, but target does not add positive initiative modifi-ers to their dodge roll of any kind. All hit targets apply dam-age and drop to movement and initiative values of 1 until the end of the turn</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9f0a-af65-e86f-689d" name="Starblast Grenade" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3e87-e864-aafd-ad71" name="Starblast Grenade" hidden="false" typeId="b156-a531-d7e5-2ffc" typeName="Grenade">
+          <characteristics>
+            <characteristic name="Range" typeId="1d65-f5d5-69f5-5b14">12</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="e0f2-cd4f-c267-fe03">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="4c05-15b8-bd6f-768a">+6</characteristic>
+            <characteristic name="Special Rules" typeId="507f-99b3-e2ce-65fe">Grenade, AOE, but target does not add positive initiative modifi-ers to their dodge roll of any kind</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2383-ca5f-d965-a5b8" name="Starfire Cannon (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33ac-010a-371b-c9b6" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="8ef5-fae5-2b5d-19cf" name="Starfire Cannon (m)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">30</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">AoE, but target does not add positive initiative modifiers to their dodge roll of any kind</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a6e8-d049-08b2-d2d3" name="Starfire Repeater (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33ac-010a-371b-c9b6" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="48e7-4d47-1919-e0c6" name="Starfire Repeater (m)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">3</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+2</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="da70-9e20-8b60-34e2" name="Sunstone Great-Sword (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="7b59-f977-ce88-e5a0" name="Sunstone Great-Sword (m)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+3 initiative in close combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1be0-8aa1-0c34-f9ba" name="Jet-Wings" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c649-072d-87d6-bd9c" name="Jet-Wings" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Grants +1 movement value to the soldier and the soldier ignores all terrain rules while the model moves.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d8c3-5a25-36ae-8e7e" name="Meteorite Gauntlet" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="bc1b-0873-5f91-fe99" name="Meteorite Gauntlet" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">The soldier bearing a Meteorite Gauntlet gains additional +1 initiative value while fighting in CC, and, if they lose close combat, they gain +1 armor value before applying the total damage.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3fc0-0b84-058b-b131" name="Meteorite Helm" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="56f2-4d0e-bcb8-0175" name="Meteorite Helm" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Grants +1 armor value to the soldier for the entirety of the battle.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8cd4-386b-9bc7-10cc" name="Emerald Sunstone" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ee19-1ebd-b90c-7d1c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a9b9-5002-79e0-786a" name="Emerald Sunstone" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Unique Relic (one per warband); Grants +3 health value to the soldier for the entirety of the battle.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="beca-ca2b-dbfd-c0e2" name="Opal Sunstone" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="eb74-9211-be57-1e38" name="Opal Sunstone" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Once per game, when the bearer is at a health value of 3 or below and must apply damage from a success-ful ranged attack roll, roll a D6. On a result of 1-4, nothing happens. On a 5-6, ignore all damage as if the attack roll failed and the ranged attack missed entirely.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="66fd-4806-ec29-c086" name="Sapphire Sunstone" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6955-a347-5387-8d55" name="Sapphire Sunstone" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">When a psychic bearing a Sapphire Sunstone attempts to cast a Psychic Block, they gain a +1 initiative modifier for their power level roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5d6f-13bb-5fa1-095f" name="Ancient Data-Script" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="8f07-791f-f869-131b" name="Ancient Data-Script" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">If the bearer has psychic abilities, then they may not only attempt to cast any of their own abilities, but may also attempt to cast any abilities from any list the opposing warband may have on their roster.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="003d-d198-c514-a31a" name="Relics" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="00ac-3069-e916-8d3d" name="Jet-Wings" hidden="false" collective="false" import="true" targetId="1be0-8aa1-0c34-f9ba" type="selectionEntry"/>
+        <entryLink id="1dd8-04bd-18ed-5f82" name="Meteorite Gauntlet" hidden="false" collective="false" import="true" targetId="d8c3-5a25-36ae-8e7e" type="selectionEntry"/>
+        <entryLink id="c3f2-fd29-ea74-4798" name="Meteorite Helm" hidden="false" collective="false" import="true" targetId="3fc0-0b84-058b-b131" type="selectionEntry"/>
+        <entryLink id="3e1d-d831-0a3a-c91e" name="Ancient Data-Script" hidden="false" collective="false" import="true" targetId="5d6f-13bb-5fa1-095f" type="selectionEntry"/>
+        <entryLink id="af71-9264-2e0f-a72c" name="Opal Sunstone" hidden="false" collective="false" import="true" targetId="beca-ca2b-dbfd-c0e2" type="selectionEntry"/>
+        <entryLink id="0a5a-32c8-1451-7593" name="Sapphire Sunstone" hidden="false" collective="false" import="true" targetId="66fd-4806-ec29-c086" type="selectionEntry"/>
+        <entryLink id="e777-7388-5c65-c98e" name="Emerald Sunstone" hidden="false" collective="false" import="true" targetId="8cd4-386b-9bc7-10cc" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="db29-bbfe-3995-d02b" name="Grenade" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="625e-fa69-e312-598d" name="Starflare Grenade" hidden="false" collective="false" import="true" targetId="ca34-f39d-5ebb-630e" type="selectionEntry"/>
+        <entryLink id="61b0-ff0f-35f0-4447" name="Starblast Grenade" hidden="false" collective="false" import="true" targetId="9f0a-af65-e86f-689d" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="f22d-c088-0c75-dd4d" name="Primary Weapon Mech" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="16c4-286c-49bb-30b6" name="Starfire Repeater (m)" hidden="false" collective="false" import="true" targetId="a6e8-d049-08b2-d2d3" type="selectionEntry"/>
+        <entryLink id="3e45-4250-667a-8898" name="Starfire Cannon (m)" hidden="false" collective="false" import="true" targetId="2383-ca5f-d965-a5b8" type="selectionEntry"/>
+        <entryLink id="8abc-b617-b6ef-0427" name="Sunstone Great-Sword (m)" hidden="false" collective="false" import="true" targetId="da70-9e20-8b60-34e2" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="d3b9-cc54-7ad3-e3e3" name="Secondary Weapon Mech" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="c054-14e1-6ad2-28ad" name="Starfire Repeater (m)" hidden="false" collective="false" import="true" targetId="a6e8-d049-08b2-d2d3" type="selectionEntry"/>
+        <entryLink id="5aee-44a1-dd56-2363" name="Starfire Cannon (m)" hidden="false" collective="false" import="true" targetId="2383-ca5f-d965-a5b8" type="selectionEntry"/>
+        <entryLink id="56b8-0171-ece2-4d65" name="Sunstone Great-Sword (m)" hidden="false" collective="false" import="true" targetId="da70-9e20-8b60-34e2" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="9894-71d7-6b41-23c3" name="Primary Weapons" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="5cc2-9bd1-d31f-4dc0" name="Starfire Pistol" hidden="false" collective="false" import="true" targetId="1943-52b2-8440-11b0" type="selectionEntry"/>
+        <entryLink id="4a26-a726-1e7f-2635" name="Starfire Rifle" hidden="false" collective="false" import="true" targetId="4fc4-36a2-7939-27ba" type="selectionEntry"/>
+        <entryLink id="dc7c-31a9-9cbc-f476" name="Starfire Shotgun" hidden="false" collective="false" import="true" targetId="7471-ddba-351f-8755" type="selectionEntry"/>
+        <entryLink id="3cfb-5d87-b26d-4d0d" name="Starfire Devastator" hidden="false" collective="false" import="true" targetId="6d1f-7a93-c25f-af9c" type="selectionEntry"/>
+        <entryLink id="ebeb-26dc-c2ea-3edb" name="Sunstone Saber" hidden="false" collective="false" import="true" targetId="db93-23ca-9f2e-288d" type="selectionEntry"/>
+        <entryLink id="9cca-dc22-a305-2528" name="Sunstone Blade" hidden="false" collective="false" import="true" targetId="b567-4fb0-4f05-ce72" type="selectionEntry"/>
+        <entryLink id="7b41-e07f-6723-077f" name="Sunstone Shuriken" hidden="false" collective="false" import="true" targetId="d7d1-6009-d17f-218c" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="fe3b-1099-a3cc-6267" name="Secondary Weapons" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="f6f8-066b-a916-3e6a" name="Starfire Pistol" hidden="false" collective="false" import="true" targetId="1943-52b2-8440-11b0" type="selectionEntry"/>
+        <entryLink id="61d9-7218-663c-2f6f" name="Starfire Rifle" hidden="false" collective="false" import="true" targetId="4fc4-36a2-7939-27ba" type="selectionEntry"/>
+        <entryLink id="2613-0916-eeca-1fc3" name="Starfire Shotgun" hidden="false" collective="false" import="true" targetId="7471-ddba-351f-8755" type="selectionEntry"/>
+        <entryLink id="a989-1f69-dd9c-0995" name="Starfire Devastator" hidden="false" collective="false" import="true" targetId="6d1f-7a93-c25f-af9c" type="selectionEntry"/>
+        <entryLink id="a519-bdca-f9d5-a492" name="Sunstone Saber" hidden="false" collective="false" import="true" targetId="db93-23ca-9f2e-288d" type="selectionEntry"/>
+        <entryLink id="b2f4-b0de-3d2d-fafb" name="Sunstone Blade" hidden="false" collective="false" import="true" targetId="b567-4fb0-4f05-ce72" type="selectionEntry"/>
+        <entryLink id="be4d-5fec-658b-6956" name="Sunstone Shuriken" hidden="false" collective="false" import="true" targetId="d7d1-6009-d17f-218c" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile id="9768-1173-d0a7-70b1" name="Psychic Ability 1" hidden="false" typeId="f7f1-057c-64de-8b10" typeName="Psychic Ability">
+      <characteristics>
+        <characteristic name="School Order" typeId="1205-2b68-f272-49f6">Abilities 1 and 4 from School of Order</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="be72-10ff-a0de-c80b" name="Psychic Ability 2" hidden="false" typeId="f7f1-057c-64de-8b10" typeName="Psychic Ability">
+      <characteristics>
+        <characteristic name="School Order" typeId="1205-2b68-f272-49f6">All abilities from School of Order and abilities 1, 2 and 3 from School of Time</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>

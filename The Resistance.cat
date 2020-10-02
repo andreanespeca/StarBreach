@@ -1,0 +1,1535 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="4911-e806-9300-0c16" name="The Resistance" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="d284-e42e-1c51-a4fb" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="c90c-9a65-65a3-40c7" name="Squad Leader (Alpha)" hidden="false" collective="false" import="true" targetId="0ada-cf66-937a-ec57" type="selectionEntry"/>
+    <entryLink id="8ebd-ed4a-1dca-2a87" name="Veteran Rebel" hidden="false" collective="false" import="true" targetId="87e5-1ee2-30d4-ed13" type="selectionEntry"/>
+    <entryLink id="df88-ca8e-b6f7-4b1e" name="Resistance Fighter" hidden="false" collective="false" import="true" targetId="bbcd-e5e9-b67c-c6c6" type="selectionEntry"/>
+    <entryLink id="6596-e2df-eba2-338e" name="New Recruit" hidden="false" collective="false" import="true" targetId="ce04-2645-6e3d-0e43" type="selectionEntry"/>
+    <entryLink id="2b77-b6ca-e84f-b075" name="Loyal Animal Companion" hidden="false" collective="false" import="true" targetId="31e2-a262-0797-72e6" type="selectionEntry"/>
+    <entryLink id="a6e0-bdb1-3d10-bba2" name="Hacked Bot" hidden="false" collective="false" import="true" targetId="a6ea-c27d-6924-44ab" type="selectionEntry"/>
+    <entryLink id="f7b1-e679-4bbe-4f6c" name="Hired Gun" hidden="false" collective="false" import="true" targetId="4765-a09e-7879-570b" type="selectionEntry"/>
+    <entryLink id="a4b9-7225-f44d-030f" name="Hacker (Unique/Psychic)" hidden="false" collective="false" import="true" targetId="aa0c-4649-0825-7fcd" type="selectionEntry"/>
+    <entryLink id="83a4-a990-ce56-b9cf" name="Paramedic (Unique)" hidden="false" collective="false" import="true" targetId="9dcd-0ee5-5fbf-0074" type="selectionEntry"/>
+    <entryLink id="0935-f6c5-74d5-3081" name="Modified Labor Mech (Unique/Mech)" hidden="false" collective="false" import="true" targetId="f6a7-6c6b-ecc8-93ea" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="bad5-9d9d-16a0-070a" name="Bleeding Hearts" hidden="false">
+      <description>During the first two turns of any battle, all Resistance soldiers and specialists add +1 to their movement value and +1 to their initia-tive value. From turn three onward, the values are dropped back down to their original, normal values.</description>
+    </rule>
+    <rule id="cbe1-ef29-c050-6311" name="Weapons of Rebellion" hidden="false">
+      <description>All Resistance soldiers and specialist with an I4 or better may take their weapons or grenades from either the “Legion of Mankind”, “Coven Empire” or “L’Orani Empire” lists at cost. When a weapon from another warband list says “FREE” in the cost, consider it as cost-ing 1uc for your soldier to acquire, unless the weapon is also listed as “FREE” in The Resistance weaponry below.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="81f8-764e-5020-f9ec" name="Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="19e4-2cde-18e0-9bcb" name="Bolt Pistol" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">12</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+2</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in cc; cannot be used to execute Cover fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2573-803a-ac88-54f5" name="Bolt Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b0f9-d195-d856-69f8" name="Bolt Rifle" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0e45-dc72-6bb1-10dc" name="Subcompact Bolt Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5ba3-a32a-84a1-06b8" name="Subcompact Bolt Gun" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">18</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+2</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in CC: Unwieldy; Compact</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bb64-683f-7ef2-56fd" name="Smoke Grenade" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="ea7c-b122-758b-33d2" name="Smoke Grenade" hidden="false" typeId="b156-a531-d7e5-2ffc" typeName="Grenade">
+          <characteristics>
+            <characteristic name="Range" typeId="1d65-f5d5-69f5-5b14">12</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="e0f2-cd4f-c267-fe03">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="4c05-15b8-bd6f-768a">na</characteristic>
+            <characteristic name="Special Rules" typeId="507f-99b3-e2ce-65fe">Grenade; AoE, but the grenade automatically hits and target area fills with smoke and creates a momentary full cover—but passable—terrain piece that is 4” round and 6” tall for the entirety of this round of battle and the next.Smoke between soldiers blocks line-of-sight like full cover,but while standing within smoke, soldiers are treatedas being within partial cover and may be assaulted.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c193-84af-1668-40a3" name="Frag Grenade" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="bf7d-d49a-d3ba-20a1" name="Frag Grenade" hidden="false" typeId="b156-a531-d7e5-2ffc" typeName="Grenade">
+          <characteristics>
+            <characteristic name="Range" typeId="1d65-f5d5-69f5-5b14">12</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="e0f2-cd4f-c267-fe03">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="4c05-15b8-bd6f-768a">+6</characteristic>
+            <characteristic name="Special Rules" typeId="507f-99b3-e2ce-65fe">Grenade; AoE, but target does not add positive initiative modifiers to their dodge roll for cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a8af-6ca1-e3df-7bf1" name="Flamethrower" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3a23-ca7a-4ff3-2ac9" name="Flamethrower" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">18</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+5</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">AoE, but target does not add positive initiative modifiers to their dodge roll for cover; Unwieldy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a9d2-88ce-2a87-e942" name="Heavy Bolt Repeater" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="abcb-7046-749a-3bdb" name="Heavy Bolt Repeater" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">AoE; Unwieldy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4e78-4326-4380-d68f" name="Plasma Shotgun" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2f0e-f326-7df0-da5d" name="Plasma Shotgun" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">18</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">Compact; Unwieldy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c233-af23-2f1f-efc8" name="Power Saber" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9b73-dc1c-f099-e548" name="Power Saber" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in close combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4e7a-e942-c2a6-351f" name="Power Guntlet" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d83a-d54d-f621-5702" name="Power Guntlet" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">Melee</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 Initiative in close Combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6cf8-e513-a4d9-fb02" name="Power Claws" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c97a-32ba-261c-9361" name="Power Claws" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+2</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in close combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8947-c8cc-dd29-64d8" name="Rocket Launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="00b0-6a8c-c345-b0db" name="Rocket Launcher" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+6</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">AoE, but target does not add positive initiative modifiers to their dodge roll for cover; Unwieldy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9e40-7669-73b0-d4db" name="Legion of Mankind Weapons" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a05b-f0a5-ea06-d541" name="Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6891-5cd3-ea41-8cf8" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="26be-8fc0-ebab-aa46" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="81f8-764e-5020-f9ec" type="selectionEntry"/>
+            <entryLink id="dc3b-8c87-bfe6-0017" name="Flamethrower" hidden="false" collective="false" import="true" targetId="a8af-6ca1-e3df-7bf1" type="selectionEntry"/>
+            <entryLink id="3595-abdf-b740-e819" name="Plasma Shotgun" hidden="false" collective="false" import="true" targetId="4e78-4326-4380-d68f" type="selectionEntry"/>
+            <entryLink id="dc48-a65b-f8cd-a8fb" name="Power Guntlet" hidden="false" collective="false" import="true" targetId="4e7a-e942-c2a6-351f" type="selectionEntry"/>
+            <entryLink id="aa12-2ff0-26f0-48b4" name="Rocket Launcher" hidden="false" collective="false" import="true" targetId="8947-c8cc-dd29-64d8" type="selectionEntry"/>
+            <entryLink id="c882-b300-0216-44fe" name="Subcompact Bolt Gun" hidden="false" collective="false" import="true" targetId="0e45-dc72-6bb1-10dc" type="selectionEntry"/>
+            <entryLink id="7a61-43ae-869b-d6e1" name="Power Saber" hidden="false" collective="false" import="true" targetId="c233-af23-2f1f-efc8" type="selectionEntry"/>
+            <entryLink id="9ee3-bd45-6fad-86f7" name="Power Claws" hidden="false" collective="false" import="true" targetId="6cf8-e513-a4d9-fb02" type="selectionEntry"/>
+            <entryLink id="11a0-cbf7-3a63-71be" name="Heavy Bolt Repeater" hidden="false" collective="false" import="true" targetId="a9d2-88ce-2a87-e942" type="selectionEntry"/>
+            <entryLink id="d2fe-586c-d1a4-13af" name="Bolt Rifle (Scoped)" hidden="false" collective="false" import="true" targetId="a955-61f9-e0a4-d1af" type="selectionEntry"/>
+            <entryLink id="6c96-d1db-4021-5677" name="Bolt Rifle" hidden="false" collective="false" import="true" targetId="2573-803a-ac88-54f5" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a955-61f9-e0a4-d1af" name="Bolt Rifle (Scoped)" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e9d2-0ab0-e829-4c63" name="Bolt Rifle (Scoped)" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">36</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">If used to execute an Advance Order, read all stats like a normal Bolt Rifle and apply -1 initiative modifier to attack roll as normal</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e0f6-cdf1-8aa3-2728" name="Electrified Knife" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="fa7d-ee37-12c3-5ede" name="Electrified Knife" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+2</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in close combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c3e3-9122-c2d1-7077" name="Line Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="cefc-42fe-cca9-c4f2" name="Line Gun" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+5</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">AoE, following these additional rules: The Player creates a 4” wide, horizontal line and places the line starting from the height of the soldier’s gun who fired the weapon. The player then moves the horizontal line directly away from the sol-dier and straight towards the point on the table which the player chose as the gun’s target area. All soldiers, foe or friendly, who are cut directly by the path of this line are con-sidered targets of the attack. Full and partial cover rules are still to be considered. Unwieldy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="78d6-5368-104b-b1d2" name="Pulse Carbine" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9ffe-a919-d4e6-0374" name="Pulse Carbine" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">18</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+1</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in CC; Compact; Unwieldy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e4d6-179d-3939-4e22" name="Pulse Handgun" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b195-aca9-15c4-9c0c" name="Pulse Handgun" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">12</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+1</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in CC; Cannot be used to execute Cover Fire Or-ders</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6fa4-9536-40fa-f70a" name="Pulse Jezail" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="bda8-7528-4927-4bde" name="Pulse Jezail" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">30</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">Cannot be used to execute Cover Fire Orders</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8461-3032-9f73-a933" name="Pulse Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c321-d594-f440-27c5" name="Pulse Rifle" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e946-82f1-8f04-555b" name="The Coven Empire Weapons" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="faea-c1f8-6bc7-9de0" name="Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4832-ddd8-261a-3f39" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4525-16bc-a2e5-0300" name="Fusion Blaster" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="6125-da66-5981-e92b" name="Fusion Blaster" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">12</characteristic>
+                    <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+                    <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+                    <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="38bd-f470-3394-44b9" name="Electrified Battle Staff" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="332c-e247-ed80-3a67" name="Electrified Battle Staff" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+                    <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+                    <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+                    <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in close combat</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="4609-00dc-a692-89ff" name="Electrified Knife" hidden="false" collective="false" import="true" targetId="e0f6-cdf1-8aa3-2728" type="selectionEntry"/>
+            <entryLink id="6423-b492-c108-a602" name="Pulse Jezail" hidden="false" collective="false" import="true" targetId="6fa4-9536-40fa-f70a" type="selectionEntry"/>
+            <entryLink id="c029-16c6-3074-904a" name="Pulse Handgun" hidden="false" collective="false" import="true" targetId="e4d6-179d-3939-4e22" type="selectionEntry"/>
+            <entryLink id="bb16-65fc-5bac-5ac6" name="Pulse Rifle" hidden="false" collective="false" import="true" targetId="8461-3032-9f73-a933" type="selectionEntry"/>
+            <entryLink id="cd11-eb1a-305c-7082" name="Pulse Carbine" hidden="false" collective="false" import="true" targetId="78d6-5368-104b-b1d2" type="selectionEntry"/>
+            <entryLink id="ac71-8f82-e9fa-2eb8" name="Line Gun" hidden="false" collective="false" import="true" targetId="c3e3-9122-c2d1-7077" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bee5-87eb-260e-11fb" name="Starfire Devastator" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0837-5725-abfa-1bc6" name="Starfire Devastator" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">AoE, but target does not add positive initiative modifiers to their dodge roll for cover; Unwieldy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="69fa-1a83-9916-6c7c" name="Starfire Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1571-b58f-2c6e-c4ff" name="Starfire Pistol" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">12</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in CC; Cannot be used for Cover Fire Order</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fbd6-ecb9-d18c-bf6f" name="Starfire Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3c7b-8f83-2dcb-e879" name="Starfire Rifle" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">30</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="481f-c373-aff4-8acc" name="Starfire Shotgun" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2fff-af38-9b33-f5e1" name="Starfire Shotgun" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">12</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in CC; Compact ; Unwieldy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f889-5fea-8ac2-338c" name="L&apos;Orani Empire Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b6d2-de4b-b59d-2a36" name="Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="94de-4ac0-530b-1756" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ee31-5a18-f39b-acea" name="Sunstone Shuriken" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="7612-d065-0bde-e9d6" name="Sunstone Shuriken" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">12</characteristic>
+                    <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+                    <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+                    <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">Compact</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="de4a-8855-c43e-2656" name="Sunstone Saber" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="3186-2cbc-5c40-1864" name="Sunstone Saber" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+                    <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+                    <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+                    <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in close combat</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f0a3-0e3f-1007-cf4c" name="Sunstone Blade" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="0b8f-3742-1d8d-66a5" name="Sunstone Blade" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+                    <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+                    <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+                    <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in close combat</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="16a6-f165-8ce1-b3eb" name="Starfire Devastator" hidden="false" collective="false" import="true" targetId="bee5-87eb-260e-11fb" type="selectionEntry"/>
+            <entryLink id="318f-09a6-ad39-5821" name="Starfire Rifle" hidden="false" collective="false" import="true" targetId="fbd6-ecb9-d18c-bf6f" type="selectionEntry"/>
+            <entryLink id="7f29-4a7e-e947-2ba3" name="Starfire Shotgun" hidden="false" collective="false" import="true" targetId="481f-c373-aff4-8acc" type="selectionEntry"/>
+            <entryLink id="7922-9cd0-f624-b082" name="Starfire Pistol" hidden="false" collective="false" import="true" targetId="69fa-1a83-9916-6c7c" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1fea-8c14-8138-ec7b" name="Jetpack" publicationId="9ed2-b94e-33e0-364e" page="62" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="754a-e1f3-f2b1-4b56" name="Jetpack" publicationId="9ed2-b94e-33e0-364e" page="62" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Grants +1 movement value to the soldier and the soldier ignores all terrain rules while the model moves.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="528c-2f1e-3adf-dfe2" name="Token of the Resistance" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0d33-4acb-65ce-0d27" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4545-060f-ecba-1cad" name="Token of the Resistance" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Unique Relic (one per warband); Grants +1 initiative value to the soldier during every Special Action Phase of a battle.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="03d2-2ca3-d4f6-2903" name="Stolen Legionary Armor" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="deb1-7167-cb26-d6b0" name="Stolen Legionary Armor" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Grants +1 armor value to the soldier for the entirety of the battle.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c650-cc4f-39dc-4fbd" name="Artifact of Old Earth" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="7ffd-1f67-04a5-09e6" name="Artifact of Old Earth" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Once per game, before executing an assigned order, the soldier gains +1 initiative value until the end of the turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ecfd-71ff-64f6-2ba0" name="Kevlar Under Armor" publicationId="9ed2-b94e-33e0-364e" page="62" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="2f50-299a-917a-a2d0" name="Kevlar Under Armor" publicationId="9ed2-b94e-33e0-364e" page="62" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Once per game, before applying damage to the soldier, the player may add to the soldier +2 armor value.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0eba-e354-cbc3-a103" name="Illicit Opiate Pack" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="6a4e-47a8-0119-2626" name="Illicit Opiate Pack" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Once per game, when executing a Down Order, the soldier regains 2 health value, up to initial maximum.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aa9b-7c9c-cc3a-ff34" name="Illicit Steroid Pack" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="1a03-69b3-1337-2450" name="Illicit Steroid Pack" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Once per game, before executing an assigned order, the soldier gains +2 movement.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="26c3-6553-7e49-cc1c" name="Com-link" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="d00d-f788-de7a-763f" name="Com-link" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Any Skills possessed by the soldier have an additional 4” radius of effect.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="40df-7ae5-cc4f-d90c" name="Auto Targeting System" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="beaa-f839-3f59-d12c" name="Auto Targeting System" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Once per game, before executing any ranged attack with any weapon, the soldier gains a +1 initiative modifier to their attack roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6730-5f63-4011-c42b" name="Accuracy Lock" publicationId="9ed2-b94e-33e0-364e" page="62" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="4f82-a458-2b28-6113" name="Accuracy Lock" publicationId="9ed2-b94e-33e0-364e" page="62" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">When executing a Fire or Advance Order, ranged attacks made by this soldier prohibit the target from adding initiative modifiers to their dodge roll for being behind cover and/or Down.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b73a-3217-98f4-97c1" name="Plasma Grenade" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="4947-163d-b957-e5eb" name="Plasma Grenade" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" typeId="b156-a531-d7e5-2ffc" typeName="Grenade">
+          <characteristics>
+            <characteristic name="Range" typeId="1d65-f5d5-69f5-5b14">12</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="e0f2-cd4f-c267-fe03">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="4c05-15b8-bd6f-768a">+5</characteristic>
+            <characteristic name="Special Rules" typeId="507f-99b3-e2ce-65fe">Grenade, AOE, but target does not add positive initiative modifiers to their dodge roll of any kind</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a778-fdf3-2c02-8217" name="Chain Blade (m)" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1bc4-3f0a-b360-ee07" name="Chain Blade (m)" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+5</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in close combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="94a2-f7ad-6255-366d" name="Crushing Claw (m)" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="aa20-1ea3-db97-f6fc" name="Crushing Claw (m)" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+7</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in close combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d989-6089-bdf9-5669" name="Flame Cannon (m)" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="afcf-bfd9-d507-4cb9" name="Flame Cannon (m)" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">18</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+5</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">AoE, but target does not add positive initiative modifiers to their dodge roll for cover; Unwieldy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9f2e-2803-2c98-bd25" name="Heavy Chain Gun (m)" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="7ad7-4723-7c28-deab" name="Heavy Chain Gun (m)" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">Unwieldy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a207-1a88-3ab5-a0ea" name="Ion Cannon (m)" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6b3a-3857-f92d-d89d" name="Ion Cannon (m)" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">36</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">In addition to applying damage, if a target is hit by the Ion Cannon, it drops to a movement value of 1 and initiative value of 1 until the end of the turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5e1e-5879-bf28-1645" name="Plasma Cannon (m)" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d033-48fd-26f8-cc23" name="Plasma Cannon (m)" publicationId="9ed2-b94e-33e0-364e" page="61" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+5</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">AoE, but target does not add positive initiative modifiers to their dodge roll of any kind</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b3d9-1251-5df6-181c" name="EMP Grenade" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="4cc6-d220-fdf3-967a" name="EMP Grenade" hidden="false" typeId="b156-a531-d7e5-2ffc" typeName="Grenade">
+          <characteristics>
+            <characteristic name="Range" typeId="1d65-f5d5-69f5-5b14">12</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="e0f2-cd4f-c267-fe03">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="4c05-15b8-bd6f-768a">na</characteristic>
+            <characteristic name="Special Rules" typeId="507f-99b3-e2ce-65fe">Grenade, AOE, but target does not add positive initiative modifi-ers to their dodge roll of any kind. All targets hit take no damage, but lose 3 movement value and cannot make ranged attacks until the end of the turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dd5d-a19e-5853-9d00" name="Pulse Jezail (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ae25-087f-a8d0-39be" name="Pulse Jezail (m)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">30</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+5</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">Cannot be used to execute Cover Fire Orders</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="17aa-78c7-5805-d488" name="Incinerator (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1b17-4cb5-e927-8c20" name="Incinerator (m)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">12</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+5</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">AoE, but target does not add positive initiative modifiers to their dodge roll for cover; Unwieldy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4d2d-2440-5404-2bfc" name="Fusion Blast Cannon (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="79cf-f13a-d0aa-5d1a" name="Fusion Blast Cannon (m)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">AoE, but target does not add positive initiative modifiers to their dodge roll for cover OR choose a single target, target does not add positive initiative modifiers to their dodge roll for cover, and attack rolls per target are upped to 3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="de7b-4f7b-e167-0128" name="Homing Plasma Missiles (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="cdcb-2969-249a-7560" name="Homing Plasma Missiles (m)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+5</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">AoE, but target does not add positive initiative modifiers to their dodge roll of any kind; Mech does not need line-of-sight of target, as long as at least one friendly soldier has line-of-sight of target</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1931-6a75-9fca-5173" name="Starblast Grenade" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="9013-d3b3-7273-5000" name="Starblast Grenade" hidden="false" typeId="b156-a531-d7e5-2ffc" typeName="Grenade">
+          <characteristics>
+            <characteristic name="Range" typeId="1d65-f5d5-69f5-5b14">12</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="e0f2-cd4f-c267-fe03">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="4c05-15b8-bd6f-768a">+6</characteristic>
+            <characteristic name="Special Rules" typeId="507f-99b3-e2ce-65fe">Grenade, AOE, but target does not add positive initiative modifi-ers to their dodge roll of any kind</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="389f-b2fc-1a9d-0ddf" name="Starflare Grenade" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="f993-b54b-61ce-1f59" name="Starflare Grenade" hidden="false" typeId="b156-a531-d7e5-2ffc" typeName="Grenade">
+          <characteristics>
+            <characteristic name="Range" typeId="1d65-f5d5-69f5-5b14">12</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="e0f2-cd4f-c267-fe03">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="4c05-15b8-bd6f-768a">0</characteristic>
+            <characteristic name="Special Rules" typeId="507f-99b3-e2ce-65fe">Grenade, AOE, but target does not add positive initiative modifi-ers to their dodge roll of any kind. All hit targets apply dam-age and drop to movement and initiative values of 1 until the end of the turn</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3ff6-0e2e-cb0c-2e3a" name="Starfire Cannon (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1e61-5523-7a6d-c391" name="Starfire Cannon (m)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">30</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">AoE, but target does not add positive initiative modifiers to their dodge roll of any kind</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9a31-87b1-7c2d-c89d" name="Starfire Repeater (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="bbae-c92c-e8eb-9358" name="Starfire Repeater (m)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">3</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+2</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e64c-833b-e4fd-c175" name="Sunstone Great-Sword (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a0bf-adc3-a5ac-9d46" name="Sunstone Great-Sword (m)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+3 initiative in close combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0ada-cf66-937a-ec57" name="Squad Leader (Alpha)" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="increment" field="9e37-50a0-9764-fda5" value="3.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c9c-6b8a-738d-b4ba" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f9b-b61d-cb90-1ac0" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e8f9-75fa-5b8b-c7c6" name="Squad Leader (Alpha)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">5</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">5</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">10</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c4e5-cabf-4707-e3c9" name="New CategoryLink" hidden="false" targetId="65fa-de41-86ca-79a3" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9a39-9dbe-0cec-0161" name="Primary Weapon Selection" hidden="false" collective="false" import="true" targetId="ced1-1e9e-4b73-591f" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7437-2979-403b-8b7a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1df1-c3b8-c8e6-4537" name="Secondary Weapon Selection" hidden="false" collective="false" import="true" targetId="bfa8-0cab-e1e9-bcb4" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b066-5940-8bb1-7b81" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="cf41-9395-e51d-e700" name="Grenades" hidden="false" collective="false" import="true" targetId="04e0-fe71-29f1-8195" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9ef-144a-171e-508d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="bbde-c63a-3ce3-3317" name="Relics" hidden="false" collective="false" import="true" targetId="ea3e-f220-e290-6d7e" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10f2-84b7-f281-edf6" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="18a1-8f43-4c3b-77b5" name="Alpha Skills" hidden="false" collective="false" import="true" targetId="3c9c-6b8a-738d-b4ba" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bab-76b5-25e0-6df8" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="87e5-1ee2-30d4-ed13" name="Veteran Rebel" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6681-3dca-71c9-5297" name="Veteran Rebel" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">5</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">9</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="8f5d-1277-5eb3-c026" name="New CategoryLink" hidden="false" targetId="3c47-be9a-ee6e-cdc3" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="dc45-752c-2b8f-d451" name="Primary Weapon Selection" hidden="false" collective="false" import="true" targetId="ced1-1e9e-4b73-591f" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f977-3c27-06ea-5d7e" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8e3b-a131-df63-926d" name="Secondary Weapon Selection" hidden="false" collective="false" import="true" targetId="bfa8-0cab-e1e9-bcb4" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfb2-bcfb-c36a-7f8f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7114-51e0-54c0-ae34" name="Grenades" hidden="false" collective="false" import="true" targetId="04e0-fe71-29f1-8195" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c70-ff72-1b1d-fec6" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ecea-9bbc-9107-bb86" name="Relics" hidden="false" collective="false" import="true" targetId="ea3e-f220-e290-6d7e" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c82c-2805-34b1-d119" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="14.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bbcd-e5e9-b67c-c6c6" name="Resistance Fighter" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2de6-add1-4753-6f62" name="Resistance Fighter" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">5</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">3</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">9</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="1726-b36e-5e91-31b8" name="New CategoryLink" hidden="false" targetId="3c47-be9a-ee6e-cdc3" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8bf2-fc7c-9ce1-cbd0" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3904-2a18-d8db-adce" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ed4a-80a2-cde6-05bd" name="Subcompact Bolt Gun" hidden="false" collective="false" import="true" targetId="0e45-dc72-6bb1-10dc" type="selectionEntry"/>
+            <entryLink id="3d74-091e-66c8-164f" name="Bolt Rifle" hidden="false" collective="false" import="true" targetId="2573-803a-ac88-54f5" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e4e2-1919-0275-9c8c" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="7c9c-794d-6785-b3ed" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="81f8-764e-5020-f9ec" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81bc-7560-09e3-16c8" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc51-7a44-facb-8be2" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="056b-71c5-c532-160a" name="Grenades" hidden="false" collective="false" import="true" targetId="04e0-fe71-29f1-8195" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b073-9587-86dd-4e07" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7d24-36f6-bb38-10b8" name="Relics" hidden="false" collective="false" import="true" targetId="ea3e-f220-e290-6d7e" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e314-0711-5a36-828f" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ce04-2645-6e3d-0e43" name="New Recruit" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d421-d284-2542-ed68" name="New Recruit" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">5</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">2</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="291e-38a9-c994-6257" name="New CategoryLink" hidden="false" targetId="3c47-be9a-ee6e-cdc3" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9939-3bf6-fbca-7ee5" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5287-fd5e-a158-6ec5" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="540e-18ed-e3aa-9573" name="Subcompact Bolt Gun" hidden="false" collective="false" import="true" targetId="0e45-dc72-6bb1-10dc" type="selectionEntry"/>
+            <entryLink id="2758-c4dd-45c3-e3bf" name="Bolt Rifle" hidden="false" collective="false" import="true" targetId="2573-803a-ac88-54f5" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8ac8-e54d-514f-2b28" name="Relics" hidden="false" collective="false" import="true" targetId="ea3e-f220-e290-6d7e" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a491-3117-890a-a00d" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="7.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="31e2-a262-0797-72e6" name="Loyal Animal Companion" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c323-9e2b-7c26-124c" name="Loyal Animal Companion" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">7</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">2</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">10</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="7568-a6a5-935e-89dc" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e73a-2e1c-c754-f5b7" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="7322-7198-2c10-eb6e" name="Claws and Teeth" hidden="false" collective="false" import="true" targetId="77b5-ae41-ed99-e747" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d905-3785-5bf3-11bb" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de80-918e-1bd8-120d" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="7.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="77b5-ae41-ed99-e747" name="Claws and Teeth" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2368-1304-d472-b681" name="Claws and Teeth" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in close combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a6ea-c27d-6924-44ab" name="Hacked Bot" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d788-e743-c0ea-6167" name="Hacked Bot" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">4</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">10</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">*</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="37ed-72b8-3cac-878d" name="Special Note" hidden="false" targetId="440f-4d04-3458-cb30" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1442-7fc6-dff6-81c8" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="54be-5810-6105-1a1c" name="Primary Weapon Selection" hidden="false" collective="false" import="true" targetId="ced1-1e9e-4b73-591f" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba47-96e8-22dd-5420" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3119-fd2d-9fb0-39ef" name="Relics" hidden="false" collective="false" import="true" targetId="ea3e-f220-e290-6d7e" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03d2-bf3c-1e98-6977" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="12.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4765-a09e-7879-570b" name="Hired Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="96ed-4924-2538-b543" name="Hired Gun" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">6</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">10</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4e60-d502-1344-6af0" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="05cd-8186-d5bb-3eda" name="Primary Weapon Selection" hidden="false" collective="false" import="true" targetId="ced1-1e9e-4b73-591f" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c40e-8d40-50d6-34ad" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="52b9-0e24-7c60-4249" name="Secondary Weapon Selection" hidden="false" collective="false" import="true" targetId="bfa8-0cab-e1e9-bcb4" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cb1-3130-a0ef-c563" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="bc41-cadf-a8bf-1a8a" name="Relics" hidden="false" collective="false" import="true" targetId="ea3e-f220-e290-6d7e" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b549-0f1c-2a92-0001" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="972b-7bdc-19af-f9f2" name="Grenades" hidden="false" collective="false" import="true" targetId="04e0-fe71-29f1-8195" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9068-3ce2-e5b2-308b" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="14.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aa0c-4649-0825-7fcd" name="Hacker (Unique/Psychic)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2805-7967-c397-33f5" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9f2d-f98c-c9fe-0e27" name="Hacker (Unique/Psychic)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">5</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">10</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="74f4-503e-d55d-b48f" name="Psychic Abilities" hidden="false" targetId="e028-7663-8c65-6de4" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="074f-5581-2c11-b5a1" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+        <categoryLink id="bd64-9dbc-8f94-65a5" name="Psychic" hidden="false" targetId="65e2-baf1-a3e7-df11" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="dcce-d799-8353-9a61" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="b43e-a28b-0699-ed01" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="81f8-764e-5020-f9ec" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c770-74be-9395-4665" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bdf-7feb-bf6d-c175" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="60c0-a03b-a7f5-87e3" name="Alpha Skill" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="dbdf-519e-d392-dbf2" name="Field Mechanic" hidden="false" collective="false" import="true" targetId="04d1-e529-437d-b522" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8731-dbfb-bf84-3b90" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc37-e375-9737-eea0" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d0cd-9213-7c88-e3f9" name="Relics" hidden="false" collective="false" import="true" targetId="ea3e-f220-e290-6d7e" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55bf-49d2-bb21-b83c" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9dcd-0ee5-5fbf-0074" name="Paramedic (Unique)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3c3-3443-6131-9ae4" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="60c3-69c5-43e8-9f35" name="Paramedic (Unique)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">6</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">3</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="663d-9909-0789-3c4b" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6e2c-1728-9a78-2337" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="1251-7b19-c5e9-1d1b" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="81f8-764e-5020-f9ec" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db76-e996-84db-1299" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a19-9802-ece9-c093" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="f66c-aa59-4c54-23b9" name="Alpha Skill" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="9653-b44d-afb8-a24f" name="Field Medicine" hidden="false" collective="false" import="true" targetId="58c7-0c88-0358-69dd" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a30f-3adf-a451-f23a" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd0f-393b-6dc9-fca9" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="ce3c-bab5-8c07-9607" name="Relics" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="214b-e376-d23d-9b34" name="Illicit Opiate Pack" hidden="false" collective="false" import="true" targetId="0eba-e354-cbc3-a103" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac27-dbe4-5a30-655e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="933f-ed08-7137-d0ae" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="11c1-839e-6d29-4496" name="Illicit Steroid Pack" hidden="false" collective="false" import="true" targetId="aa9b-7c9c-cc3a-ff34" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b91-c2a3-bf98-94c1" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e2b-8522-c326-037e" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f6a7-6c6b-ecc8-93ea" name="Modified Labor Mech (Unique/Mech)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33a9-da2c-59c4-64cb" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="eb04-760c-f259-f136" name="Modified Labor Mech (Unique/Mech)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">6</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">12</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d08b-94d3-8f57-b086" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+        <categoryLink id="134f-206c-dbb9-0576" name="Mech" hidden="false" targetId="5180-40a8-602d-2721" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="62f7-6232-9ddf-7d88" name="Primary Mech Weapon" hidden="false" collective="false" import="true" targetId="3b4f-636e-2377-f2a8" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbbc-fa54-c317-7ba2" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3559-3ead-ef11-3da2" name="Secondary Mech Weapon" hidden="false" collective="false" import="true" targetId="b1fc-07ea-42cb-419c" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e9d-b71b-4993-7649" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="16.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="ea3e-f220-e290-6d7e" name="Relics" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="7511-750a-652e-31cc" name="Jetpack" hidden="false" collective="false" import="true" targetId="1fea-8c14-8138-ec7b" type="selectionEntry"/>
+        <entryLink id="d7a3-a995-55cf-41ad" name="Token of the Resistance" hidden="false" collective="false" import="true" targetId="528c-2f1e-3adf-dfe2" type="selectionEntry"/>
+        <entryLink id="d0d1-3416-8f11-0b5a" name="Stolen Legionary Armor" hidden="false" collective="false" import="true" targetId="03d2-2ca3-d4f6-2903" type="selectionEntry"/>
+        <entryLink id="e0f4-47ba-21dd-f6ee" name="Artifact of Old Earth" hidden="false" collective="false" import="true" targetId="c650-cc4f-39dc-4fbd" type="selectionEntry"/>
+        <entryLink id="54ce-9d60-9c0a-7ac8" name="Kevlar Under Armor" hidden="false" collective="false" import="true" targetId="ecfd-71ff-64f6-2ba0" type="selectionEntry"/>
+        <entryLink id="1073-a5cd-ba73-d384" name="Illicit Opiate Pack" hidden="false" collective="false" import="true" targetId="0eba-e354-cbc3-a103" type="selectionEntry"/>
+        <entryLink id="c825-0131-620b-33e3" name="Illicit Steroid Pack" hidden="false" collective="false" import="true" targetId="aa9b-7c9c-cc3a-ff34" type="selectionEntry"/>
+        <entryLink id="4aa6-892e-e460-d5d5" name="Com-link" hidden="false" collective="false" import="true" targetId="26c3-6553-7e49-cc1c" type="selectionEntry"/>
+        <entryLink id="f6a1-fe6e-0d37-c8a2" name="Auto Targeting System" hidden="false" collective="false" import="true" targetId="40df-7ae5-cc4f-d90c" type="selectionEntry"/>
+        <entryLink id="d7ef-b363-8f8b-e79c" name="Accuracy Lock" hidden="false" collective="false" import="true" targetId="6730-5f63-4011-c42b" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="3b4f-636e-2377-f2a8" name="Primary Mech Weapon" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="9cd5-1477-fbf9-14bc" name="Chain Blade (m)" hidden="false" collective="false" import="true" targetId="a778-fdf3-2c02-8217" type="selectionEntry"/>
+        <entryLink id="9810-396a-55e5-267f" name="Crushing Claw (m)" hidden="false" collective="false" import="true" targetId="94a2-f7ad-6255-366d" type="selectionEntry"/>
+        <entryLink id="2de3-e236-6049-fa81" name="Ion Cannon (m)" hidden="false" collective="false" import="true" targetId="a207-1a88-3ab5-a0ea" type="selectionEntry"/>
+        <entryLink id="1cc4-3208-f53b-ef83" name="Heavy Chain Gun (m)" hidden="false" collective="false" import="true" targetId="9f2e-2803-2c98-bd25" type="selectionEntry"/>
+        <entryLink id="d174-72eb-cf8c-ba54" name="Flame Cannon (m)" hidden="false" collective="false" import="true" targetId="d989-6089-bdf9-5669" type="selectionEntry"/>
+        <entryLink id="59e9-4eee-99b1-cd8b" name="Plasma Cannon (m)" hidden="false" collective="false" import="true" targetId="5e1e-5879-bf28-1645" type="selectionEntry"/>
+        <entryLink id="81da-1117-5e48-8af1" name="Pulse Jezail (m)" hidden="false" collective="false" import="true" targetId="dd5d-a19e-5853-9d00" type="selectionEntry"/>
+        <entryLink id="ef33-f197-51f7-9660" name="Incinerator (m)" hidden="false" collective="false" import="true" targetId="17aa-78c7-5805-d488" type="selectionEntry"/>
+        <entryLink id="3f89-c3c4-a418-60de" name="Fusion Blast Cannon (m)" hidden="false" collective="false" import="true" targetId="4d2d-2440-5404-2bfc" type="selectionEntry"/>
+        <entryLink id="bfbc-0173-3593-3bb8" name="Homing Plasma Missiles (m)" hidden="false" collective="false" import="true" targetId="de7b-4f7b-e167-0128" type="selectionEntry"/>
+        <entryLink id="eea0-a9c5-d6e3-982f" name="Starfire Cannon (m)" hidden="false" collective="false" import="true" targetId="3ff6-0e2e-cb0c-2e3a" type="selectionEntry"/>
+        <entryLink id="c4b5-a74d-c085-c140" name="Starfire Repeater (m)" hidden="false" collective="false" import="true" targetId="9a31-87b1-7c2d-c89d" type="selectionEntry"/>
+        <entryLink id="79d8-f83f-7e6d-5411" name="Sunstone Great-Sword (m)" hidden="false" collective="false" import="true" targetId="e64c-833b-e4fd-c175" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="ced1-1e9e-4b73-591f" name="Primary Weapon Selection" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="7bc9-0357-71e6-8fc0" name="Legion of Mankind Weapons" hidden="false" collective="false" import="true" targetId="9e40-7669-73b0-d4db" type="selectionEntry"/>
+        <entryLink id="1f5e-15fa-c715-9ada" name="The Coven Empire Weapons" hidden="false" collective="false" import="true" targetId="e946-82f1-8f04-555b" type="selectionEntry"/>
+        <entryLink id="748a-4004-b7d7-7243" name="L&apos;Orani Empire Weapon" hidden="false" collective="false" import="true" targetId="f889-5fea-8ac2-338c" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="04e0-fe71-29f1-8195" name="Grenades" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="4b7b-3de8-61cc-c831" name="Smoke Grenade" hidden="false" collective="false" import="true" targetId="bb64-683f-7ef2-56fd" type="selectionEntry"/>
+        <entryLink id="932f-3c3f-f22c-c3c9" name="Frag Grenade" hidden="false" collective="false" import="true" targetId="c193-84af-1668-40a3" type="selectionEntry"/>
+        <entryLink id="276c-c61b-3501-e3e9" name="Plasma Grenade" hidden="false" collective="false" import="true" targetId="b73a-3217-98f4-97c1" type="selectionEntry"/>
+        <entryLink id="5162-f73d-645c-0382" name="EMP Grenade" hidden="false" collective="false" import="true" targetId="b3d9-1251-5df6-181c" type="selectionEntry"/>
+        <entryLink id="2b1b-3a52-e953-db82" name="Starblast Grenade" hidden="false" collective="false" import="true" targetId="1931-6a75-9fca-5173" type="selectionEntry"/>
+        <entryLink id="6d47-2295-0729-e084" name="Starflare Grenade" hidden="false" collective="false" import="true" targetId="389f-b2fc-1a9d-0ddf" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="b1fc-07ea-42cb-419c" name="Secondary Mech Weapon" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="f868-f1dc-8b88-8466" name="Chain Blade (m)" hidden="false" collective="false" import="true" targetId="a778-fdf3-2c02-8217" type="selectionEntry"/>
+        <entryLink id="3f66-a5b9-7fa0-296f" name="Crushing Claw (m)" hidden="false" collective="false" import="true" targetId="94a2-f7ad-6255-366d" type="selectionEntry"/>
+        <entryLink id="8711-f242-149b-d9f3" name="Ion Cannon (m)" hidden="false" collective="false" import="true" targetId="a207-1a88-3ab5-a0ea" type="selectionEntry"/>
+        <entryLink id="985a-c337-dd2e-e5bc" name="Heavy Chain Gun (m)" hidden="false" collective="false" import="true" targetId="9f2e-2803-2c98-bd25" type="selectionEntry"/>
+        <entryLink id="b5e6-e50d-6466-fc6a" name="Flame Cannon (m)" hidden="false" collective="false" import="true" targetId="d989-6089-bdf9-5669" type="selectionEntry"/>
+        <entryLink id="5f1e-1221-1b59-fc3c" name="Plasma Cannon (m)" hidden="false" collective="false" import="true" targetId="5e1e-5879-bf28-1645" type="selectionEntry"/>
+        <entryLink id="5442-4023-35d3-30ab" name="Pulse Jezail (m)" hidden="false" collective="false" import="true" targetId="dd5d-a19e-5853-9d00" type="selectionEntry"/>
+        <entryLink id="5969-b58d-63ac-a0c3" name="Incinerator (m)" hidden="false" collective="false" import="true" targetId="17aa-78c7-5805-d488" type="selectionEntry"/>
+        <entryLink id="3bbb-7eac-5c27-5efd" name="Fusion Blast Cannon (m)" hidden="false" collective="false" import="true" targetId="4d2d-2440-5404-2bfc" type="selectionEntry"/>
+        <entryLink id="24c5-4c33-5d91-4887" name="Homing Plasma Missiles (m)" hidden="false" collective="false" import="true" targetId="de7b-4f7b-e167-0128" type="selectionEntry"/>
+        <entryLink id="b4fa-82d2-7931-0aa7" name="Starfire Cannon (m)" hidden="false" collective="false" import="true" targetId="3ff6-0e2e-cb0c-2e3a" type="selectionEntry"/>
+        <entryLink id="e56d-7806-191a-40cd" name="Starfire Repeater (m)" hidden="false" collective="false" import="true" targetId="9a31-87b1-7c2d-c89d" type="selectionEntry"/>
+        <entryLink id="9b01-3480-2e70-d67b" name="Sunstone Great-Sword (m)" hidden="false" collective="false" import="true" targetId="e64c-833b-e4fd-c175" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="bfa8-0cab-e1e9-bcb4" name="Secondary Weapon Selection" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="d24d-6bc8-2953-4445" name="Legion of Mankind Weapons" hidden="false" collective="false" import="true" targetId="9e40-7669-73b0-d4db" type="selectionEntry"/>
+        <entryLink id="30de-0a61-f2ff-c42d" name="The Coven Empire Weapons" hidden="false" collective="false" import="true" targetId="e946-82f1-8f04-555b" type="selectionEntry"/>
+        <entryLink id="02d5-b5bb-85f3-773b" name="L&apos;Orani Empire Weapon" hidden="false" collective="false" import="true" targetId="f889-5fea-8ac2-338c" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile id="e028-7663-8c65-6de4" name="Psychic Abilities" hidden="false" typeId="f7f1-057c-64de-8b10" typeName="Psychic Ability">
+      <characteristics>
+        <characteristic name="School Order" typeId="1205-2b68-f272-49f6">Ability 1 and 4 from Plasmids</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="440f-4d04-3458-cb30" name="Special Note" hidden="false" typeId="71cc-52da-8668-e6a7" typeName="Ability">
+      <characteristics>
+        <characteristic name="Ability" typeId="2243-ea94-8d78-7049">When a Hacked Bot must apply damage, instead of applying the total damage count against armor first and then health, the damage total is always simply halved (rounding up) and then applied against health.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>

@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="503d-61d4-45e7-f463" name="The Ancient Machine" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="d284-e42e-1c51-a4fb" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="709c-4596-f99f-d545" name="Ancient Seer (Alpha/Psychic)" hidden="false" collective="false" import="true" targetId="fe2b-43d1-977c-1555" type="selectionEntry"/>
+    <entryLink id="dc45-2148-4d4d-dc12" name="Droid Mk2" hidden="false" collective="false" import="true" targetId="d34b-8c7c-c712-5e92" type="selectionEntry"/>
+    <entryLink id="a5eb-6b27-ec28-bf0a" name="Droid Mk1" hidden="false" collective="false" import="true" targetId="aadd-37ff-a61a-1d7f" type="selectionEntry"/>
+    <entryLink id="097e-81df-0d0e-15ae" name="Razor Bot Swarm" hidden="false" collective="false" import="true" targetId="8586-d287-fa08-eec7" type="selectionEntry"/>
+    <entryLink id="71c5-b363-102e-1aa9" name="Shock-trooper Droid" hidden="false" collective="false" import="true" targetId="7f64-d103-4fd4-9d54" type="selectionEntry"/>
+    <entryLink id="3f55-7ec3-3bac-9910" name="Heavy Support Droid" hidden="false" collective="false" import="true" targetId="f8f0-c7df-5168-7d30" type="selectionEntry"/>
+    <entryLink id="4f1b-308a-39b8-b1f2" name="Ancient Soothsayer (Unique/Psychic)" hidden="false" collective="false" import="true" targetId="4b3c-b0e1-1adf-0b92" type="selectionEntry"/>
+    <entryLink id="f4d0-d233-aa48-3b84" name="Razor Bot Mother (Unique/Mech)" hidden="false" collective="false" import="true" targetId="ef13-1070-e676-10e1" type="selectionEntry"/>
+    <entryLink id="c52e-a30e-1fee-89ce" name="War Machine (Unique/Mech)" hidden="false" collective="false" import="true" targetId="90f3-3794-acaa-9d28" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="6245-f3ed-cfcb-0fef" name="Plasma Shielding" publicationId="9ed2-b94e-33e0-364e" page="69" hidden="false">
+      <description>When Ancient Machine soldiers and specialists apply damage, instead of applying the total damage count against armor first and then health, the damage total is simply halved (rounding up) and then applied against health. If the Ancient Machine Alpha dies, then this shield connection is broken and all soldiers and specialist are left with an armor value of 2. If a soldier with the “Plasma Shielding” rule has the opportunity to add an armor value (from a skill or relic), then damage against the soldier is first applied against this armor value, and then halved (rounding up) before damage are applied to their health.</description>
+    </rule>
+    <rule id="4edd-a992-c7cb-2348" name="Auto-Mend Protocol" publicationId="9ed2-b94e-33e0-364e" page="69" hidden="false">
+      <description>When executing a Mend Order, any Ancient Machine soldier or specialist automatically gains +4 health, with no D6 roll neces-sary.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry id="fe2b-43d1-977c-1555" name="Ancient Seer (Alpha/Psychic)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c56-ec90-dbfd-ff8d" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="5491-bdb6-4d23-a047" name="Ancient Seer (Alpha/Psychic)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">4</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">6</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">12</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">*</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3456-5498-f07b-e50c" name="Psychic Ability" hidden="false" targetId="4dc1-5c53-694b-b845" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ee71-5ffc-dda0-d90f" name="New CategoryLink" hidden="false" targetId="65fa-de41-86ca-79a3" primary="true"/>
+        <categoryLink id="14a3-ad92-4695-3632" name="New CategoryLink" hidden="false" targetId="65e2-baf1-a3e7-df11" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2a15-0845-b829-2a98" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="c7ff-79a2-f277-f13b" name="Electrified Scythe" hidden="false" collective="false" import="true" targetId="6f4c-f93b-478c-53eb" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c985-21bf-3196-27ea" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e200-1bf8-02a7-3459" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="3f86-d769-4b68-4ee4" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="18a9-6ffb-99b8-bb72" name="Beam Rifle" hidden="false" collective="false" import="true" targetId="9d49-3e75-63aa-bd71" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f68a-b394-0c30-bee7" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5f3-8020-72b6-17a8" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7177-eaeb-53f2-2ad5" name="Relics" hidden="false" collective="false" import="true" targetId="1e6b-de32-fe5d-3f9e" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5577-87f6-347e-1e15" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8fa1-496e-f78d-8fbb" name="Alpha Skills" hidden="false" collective="false" import="true" targetId="3c9c-6b8a-738d-b4ba" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e0e-5e0f-4c3e-3900" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="14a6-2236-9661-021e" name="Field Mechanic" hidden="false" collective="false" import="true" targetId="04d1-e529-437d-b522" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3ea-1afa-fe6e-4dc2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffa6-c35f-9bce-fd62" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d34b-8c7c-c712-5e92" name="Bot Mk2" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a228-28aa-9dfa-ce4e" name="Bot Mk2" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">4</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">10</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">*</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="677f-5762-dc25-6bf1" name="New CategoryLink" hidden="false" targetId="3c47-be9a-ee6e-cdc3" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2a99-f4d1-3873-e448" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="736b-5471-8ba1-db3b" name="Beam Rifle" hidden="false" collective="false" import="true" targetId="9d49-3e75-63aa-bd71" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63ab-8f2b-2821-f2b9" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef7a-18e8-6375-1bde" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9955-3566-bd22-e7c5" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="a530-1cd0-b430-f3e6" name="Electrified Knife" hidden="false" collective="false" import="true" targetId="f2d8-e68d-8d3a-d9a7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a1c-d87f-25af-fb8c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c93b-460a-34e8-419a" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="a566-9f99-3886-1f19" name="Relics" hidden="false" collective="false" import="true" targetId="1e6b-de32-fe5d-3f9e" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3acb-abad-11c9-b96d" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="13.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aadd-37ff-a61a-1d7f" name="Bot Mk1" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4808-99bf-767a-e14c" name="Bot Mk1" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">4</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">3</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">10</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">*</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="96e6-5ccb-5c31-6f73" name="New CategoryLink" hidden="false" targetId="3c47-be9a-ee6e-cdc3" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="80fa-cbb0-5506-dee0" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="30fd-a221-a236-9468" name="Beam Rifle" hidden="false" collective="false" import="true" targetId="9d49-3e75-63aa-bd71" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef39-72b1-6753-383e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aad1-8d34-627c-86d2" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="ce09-f11a-0403-0158" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="cc67-f9dd-2db8-74e8" name="Electrified Knife" hidden="false" collective="false" import="true" targetId="f2d8-e68d-8d3a-d9a7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fd2-d33b-12a7-4ae7" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5705-664f-246d-6f1d" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7d98-c468-35df-e2a5" name="Relics" hidden="false" collective="false" import="true" targetId="1e6b-de32-fe5d-3f9e" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82ef-c771-1fd5-5087" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8586-d287-fa08-eec7" name="Razor Bot Swarm" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="bb15-d6ab-6f7d-93cd" name="Razor Bot Swarm" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">6</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">2</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">*</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="a2b1-172e-7ef5-770c" name="New CategoryLink" hidden="false" targetId="3c47-be9a-ee6e-cdc3" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c058-a338-7890-8fa2" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="ba79-142a-5c58-b171" name="Searing Razors" hidden="false" collective="false" import="true" targetId="5b77-7926-91e7-7335" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d825-bc14-14c2-e7aa" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef11-e286-c183-54a9" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7f64-d103-4fd4-9d54" name="Shock-trooper Bot" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c23d-3a2f-4504-cdfa" name="Shock-trooper Bot" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">6</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">*</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c64f-69f6-8710-b0d7" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4d09-c1f8-1240-74e8" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="c71f-a9ec-ef31-9c2b" name="Electrified Rod" hidden="false" collective="false" import="true" targetId="ef08-173a-b807-3a46" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bc7-261b-dca3-8a7e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="600a-8ef8-7280-1460" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4c32-5c5c-c959-afff" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="fef6-8419-f9f2-62f8" name="Electrified Knife" hidden="false" collective="false" import="true" targetId="f2d8-e68d-8d3a-d9a7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2610-393a-1ca2-f08a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c00-48b7-cfc5-73c4" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ba10-286f-49b2-67aa" name="Relics" hidden="false" collective="false" import="true" targetId="1e6b-de32-fe5d-3f9e" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b197-a0b6-62bd-8b70" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="12.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f8f0-c7df-5168-7d30" name="Heavy Support Bot" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b022-f1cd-5178-d14c" name="Heavy Support BOt" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">4</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">3</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">12</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">*</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="106c-fb08-0a0b-eab0" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="eb42-bae8-799f-74aa" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="6327-190d-d787-7622" name="Electrified Knife" hidden="false" collective="false" import="true" targetId="f2d8-e68d-8d3a-d9a7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20da-e94e-2b16-6d9d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b30c-74a9-7c1b-48b2" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="57c7-6ee6-0bbe-d8c1" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b222-027c-cde5-fead" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="bd00-7ba2-a8b8-3528" name="Beam Cannon" hidden="false" collective="false" import="true" targetId="6dbf-c285-a0c4-d1f9" type="selectionEntry"/>
+            <entryLink id="2b3b-bab8-e5e8-7899" name="Lighting Cannon" hidden="false" collective="false" import="true" targetId="d595-1f64-2f47-9498" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2316-191d-1312-5e2b" name="Relics" hidden="false" collective="false" import="true" targetId="1e6b-de32-fe5d-3f9e" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7c1-decc-84a7-32fc" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="13.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4b3c-b0e1-1adf-0b92" name="Ancient Soothsayer (Unique/Psychic)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f56d-1cc9-e5ae-de65" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="f561-3657-a038-f840" name="Ancient Soothsayer (Unique/Psychic)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">4</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">5</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">8</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">*</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="bb53-b714-eff2-36ce" name="Psychic Ability" hidden="false" targetId="4dc1-5c53-694b-b845" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="36ed-0e29-c7bb-f163" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+        <categoryLink id="b703-7d43-e1f0-e883" name="Psychic" hidden="false" targetId="65e2-baf1-a3e7-df11" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="07cc-47dc-c3ac-c9cd" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="dd75-bab4-37a4-29c2" name="Electrified Knife" hidden="false" collective="false" import="true" targetId="f2d8-e68d-8d3a-d9a7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4861-1ee9-71be-1cae" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6ae-7522-1760-80ee" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4f47-abea-8c3e-00c7" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="5ab8-c446-da30-47ec" name="Electrified Scythe" hidden="false" collective="false" import="true" targetId="6f4c-f93b-478c-53eb" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e5d-f9e7-acb1-19df" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="237c-82fa-8136-936b" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="19ca-1343-1aea-5621" name="Relics" hidden="false" collective="false" import="true" targetId="1e6b-de32-fe5d-3f9e" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2265-5015-fdaf-acdd" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ef13-1070-e676-10e1" name="Razor Bot Mother (Unique/Mech)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a04b-9267-ad39-a32d" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="c01f-a250-9e06-f540" name="Razor Bot Mother (Unique/Mech)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">6</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">12</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">*</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="48f7-8f1e-8903-1f0d" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+        <categoryLink id="80be-beea-0b1b-c798" name="Mech" hidden="false" targetId="5180-40a8-602d-2721" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8a74-39dd-0d86-dbad" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="87ff-1b2c-b781-ba02" name="Razor Bot Swarm (m)" hidden="false" collective="false" import="true" targetId="2d51-7e96-7598-98ff" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3b4-d552-cfc6-ce00" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fae-2a10-404a-0ad5" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7b3b-38b2-2d4d-c72a" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="9ac3-cb13-2a3a-910d" name="Searing Razors" hidden="false" collective="false" import="true" targetId="5b77-7926-91e7-7335" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5062-ed50-11b8-fb36" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b928-fbcd-5d3a-d408" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="17.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="90f3-3794-acaa-9d28" name="War Machine (Unique/Mech)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cf7-bc67-fb18-fec8" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="db8c-3bfa-c895-ffbd" name="War Machine (Unique/Mech)" hidden="false" typeId="27c9-8948-56dc-b664" typeName="Characteristic">
+          <characteristics>
+            <characteristic name="Movement" typeId="df79-088a-9662-4941">4</characteristic>
+            <characteristic name="Initiative" typeId="546c-2d7b-94fa-714b">4</characteristic>
+            <characteristic name="Health" typeId="0860-036f-b5e3-0b5c">14</characteristic>
+            <characteristic name="Armor" typeId="fdb9-7fc6-151b-96f4">*</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6329-3a09-cd51-2f2e" name="New CategoryLink" hidden="false" targetId="ff4a-8fe9-f722-104d" primary="true"/>
+        <categoryLink id="54fe-e150-1772-f0d5" name="Mech" hidden="false" targetId="5180-40a8-602d-2721" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7ea2-9e33-6926-ab63" name="Primary Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb63-bb68-f173-377f" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6e16-8ba8-8ca6-6f13" name="Lightning Coil (m)" hidden="false" collective="false" import="true" targetId="66a1-93fe-0b6b-a4b5" type="selectionEntry"/>
+            <entryLink id="a14f-29ad-e1ee-77da" name="Precision Laser Beam (m)" hidden="false" collective="false" import="true" targetId="e478-c226-b904-77f3" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8961-a410-7f7c-80fe" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cc7-bb59-59e7-7875" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c1e3-7981-394e-360f" name="Precision Laser Beam (m)" hidden="false" collective="false" import="true" targetId="e478-c226-b904-77f3" type="selectionEntry"/>
+            <entryLink id="c5d2-536b-5e75-2e63" name="Dual Beam Cannon (m)" hidden="false" collective="false" import="true" targetId="2c5c-c8e8-407f-d6eb" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f2d8-e68d-8d3a-d9a7" name="Electrified Knife" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e0f2-b515-7a67-1692" name="Electrified Knife" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">melee</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+2</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+1 initiative in close combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ef08-173a-b807-3a46" name="Electrified Rod" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4780-e62d-9b5d-d62f" name="Electrified Rod" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">6</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">na</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in close combat and ranged attacks; Compact; If this weapon hits, for each hit, disregard total damage and target’s armor and immediately subtract 3 health from the target; if used in close combat, when the soldier wins a round of close combat, also apply wounds in the above manner (subtracting 3 health)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6f4c-f93b-478c-53eb" name="Electrified Scythe" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="660d-eaa3-73bc-2db3" name="Electrified Scythe" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">12</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">na</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+2 initiative in close combat and ranged attacks; Compact; If this weapon hits, for each hit, disregard total damage and target’s armor and immediately subtract 3 health from the target; if used in close combat, when the soldier wins a round of close combat, also apply wounds in the above manner (subtracting 3 health)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5b77-7926-91e7-7335" name="Searing Razors" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="62ad-a080-e6c7-f77e" name="Searing Razors" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">6</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">3</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+2</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">+3 initiative in close combat</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9d49-3e75-63aa-bd71" name="Beam Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f579-aaa8-e603-a349" name="Beam Rifle" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+3</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6dbf-c285-a0c4-d1f9" name="Beam Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d7ee-a7f9-3696-013f" name="Beam Cannon" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">30</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+6</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d595-1f64-2f47-9498" name="Lighting Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="053b-6ea0-71e9-ae05" name="Lighting Cannon" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">na</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">If this weapon hits, for each hit, disregard total damage and target’s armor and immediately subtract 4 health from the target; when used in close combat resolve damage normally</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="66a1-93fe-0b6b-a4b5" name="Lightning Coil (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6df9-41f8-92d6-1a37" name="Lightning Coil (m)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">12</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">3</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">na</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">If this weapon hits, for each hit, disregard total damage and target’s armor and immediately subtract 4 health from the target; when used in close combat resolve damage normally</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2d51-7e96-7598-98ff" name="Razor Bot Swarm (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ddca-b464-b5ad-cfd6" name="Razor Bot Swarm" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">6</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">na</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">na</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">Twice per game, instead of executing a ranged attack during a Fire or order, the Razor Bot Mother releases a Razor Bot Swarm, which is placed anywhere within 6” of the Mother. The Razor Bot Swarm is immediately ready for battle, and a corresponding order die is added to the dice bag.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e478-c226-b904-77f3" name="Precision Laser Beam (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="62d3-4274-fc01-b7ba" name="Precision Laser Beam (m)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">30</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">1</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+6</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">Target(s) from this attack do not add positive initiative mod-ifiers to their dodge roll of any kind</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2c5c-c8e8-407f-d6eb" name="Dual Beam Cannon (m)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="032e-5b32-4e7a-cb76" name="Dual Beam Cannon (m)" hidden="false" typeId="d89f-2134-4e54-a502" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="549e-ea38-4e69-a0d9">24</characteristic>
+            <characteristic name="Attack Roll Per Target" typeId="453a-bb38-6f29-78f1">2</characteristic>
+            <characteristic name="Damage Bonus" typeId="eb54-e43c-e3f5-d2ef">+4</characteristic>
+            <characteristic name="Special Rules" typeId="1d54-d789-0fcb-405d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f870-9c47-5064-53b2" name="Overclocked Driver" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="26ff-bcc3-3615-5677" name="Overclocked Driver" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Once per game, before executing any assigned order, the soldier may add +1 initiative value until the end of the turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="581e-7b38-5e49-cc3d" name="Auto Targeting System" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4d1e-1bb2-0b9d-1931" name="Auto Targeting System" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">Once per game, before executing any ranged attack with any weapon, the soldier gains a +1 initia-tive modifier to their attack roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e633-798d-4955-5d46" name="Accuracy Lock" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0d29-7bbe-908a-a13b" name="Accuracy Lock" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">When executing a Fire or Advance Order, ranged attacks made by this soldier prohibit the target from adding initiative modifiers to their dodge roll for being behind cover and/or Down.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="728e-af8f-a6ff-1f72" name="Telescoping Optics" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ddc5-6b94-fc46-ca74" name="Telescoping Optics" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">The soldier treats all ranged attacks as if they were shooting from close-range (+1 initiative to attack rolls)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4282-6746-8065-2b84" name="Sub-Gamma Gun Cell" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c683-0517-32e8-7a90" name="Sub-Gamma Gun Cell" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">When this soldier executes any ranged attack with a weapon that has “Beam” in the name, the tar-geted soldier immediately and automatically applies -1 to their health value, even if the ranged at-tack is a miss.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a0b4-36a0-a188-3d5a" name="Sub-Gamma Radiation" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="39b4-8a38-fc92-ad67" name="Sub-Gamma Radiation" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">When this soldier comes into close combat with an enemy, the enemy soldier must immediately, automatically apply -1 to their health value, before the close combat round is fought.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6c8e-a948-771a-7b1d" name="Dark Crystal Diode" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="eee0-c2bd-7cec-fa66" name="Dark Crystal Diode" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
+          <characteristics>
+            <characteristic name="Special Rules" typeId="b1d9-301e-599c-d3f6">When this soldier causes damage against an enemy target while using a weapon that has “Electri-fied” in the name, the soldier regains 2 health value, up to their initial maximum.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="1e6b-de32-fe5d-3f9e" name="Relics" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="4516-8789-6f5d-7283" name="Overclocked Driver" hidden="false" collective="false" import="true" targetId="f870-9c47-5064-53b2" type="selectionEntry"/>
+        <entryLink id="5bca-8bb8-f458-1f05" name="Auto Targeting System" hidden="false" collective="false" import="true" targetId="581e-7b38-5e49-cc3d" type="selectionEntry"/>
+        <entryLink id="b895-539e-7b2c-4df9" name="Accuracy Lock" hidden="false" collective="false" import="true" targetId="e633-798d-4955-5d46" type="selectionEntry"/>
+        <entryLink id="69f6-db91-b76f-3cb2" name="Telescoping Optics" hidden="false" collective="false" import="true" targetId="728e-af8f-a6ff-1f72" type="selectionEntry"/>
+        <entryLink id="ee0c-074a-2be9-e456" name="Sub-Gamma Gun Cell" hidden="false" collective="false" import="true" targetId="4282-6746-8065-2b84" type="selectionEntry"/>
+        <entryLink id="7ba1-4188-b0b3-692f" name="Sub-Gamma Radiation" hidden="false" collective="false" import="true" targetId="a0b4-36a0-a188-3d5a" type="selectionEntry"/>
+        <entryLink id="ed76-45e3-230c-7713" name="Dark Crystal Diode" hidden="false" collective="false" import="true" targetId="6c8e-a948-771a-7b1d" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile id="4dc1-5c53-694b-b845" name="Psychic Ability" hidden="false" typeId="f7f1-057c-64de-8b10" typeName="Psychic Ability">
+      <characteristics>
+        <characteristic name="School Order" typeId="1205-2b68-f272-49f6">All Plasmid abilities</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
