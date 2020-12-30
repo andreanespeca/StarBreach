@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cccc-5175-7d8a-6726" name="The Dark Path" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="d284-e42e-1c51-a4fb" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cccc-5175-7d8a-6726" name="The Dark Path" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="d284-e42e-1c51-a4fb" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="7513-4483-f90c-ff93" name="Assault Trooper (War)" hidden="false" collective="false" import="true" targetId="3d81-6b95-b02d-1b83" type="selectionEntry"/>
     <entryLink id="6c20-f5db-d2fd-663f" name="Hired Gun (Unique)" hidden="false" collective="false" import="true" targetId="df47-f32e-86dd-e59d" type="selectionEntry"/>
@@ -309,15 +309,6 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8afe-ae21-c6c0-4fba" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85aa-009c-591b-9e7d" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="39d1-86d0-e969-4617" name="Grenade" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="0f4a-f84c-575d-ab4c" name="Thermal Detonator Grenade" hidden="false" collective="false" import="true" targetId="5c42-3bde-9ac7-dd17" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="373c-9178-c257-473b" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -703,6 +694,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="b1fc-3515-7753-3e0f" name="Auto Targeting System (Specialists Only)" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d81-6b95-b02d-1b83" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="fa5d-c8a8-525d-a927" name="Auto Targeting System (Specialists Only)" hidden="false" typeId="7af8-bea8-aaa8-2295" typeName="Relic">
           <characteristics>

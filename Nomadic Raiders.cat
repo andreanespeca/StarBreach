@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="116c-b88d-8492-6844" name="Nomadic Raiders" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="d284-e42e-1c51-a4fb" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="116c-b88d-8492-6844" name="Nomadic Raiders" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="d284-e42e-1c51-a4fb" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="3017-56e2-107a-6d22" name="Captain (Alpha)" hidden="false" collective="false" import="true" targetId="2197-b271-d92d-e63f" type="selectionEntry"/>
     <entryLink id="324b-7a4c-7335-9be9" name="1st Mate (Unique)" hidden="false" collective="false" import="true" targetId="0fea-2c25-c4fa-38b2" type="selectionEntry"/>
@@ -146,7 +146,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="869c-2bcf-416a-ca85" name="Opal Sunstone" hidden="false" collective="false" import="true" type="upgrade">
@@ -168,7 +168,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3306-8612-0ec5-5b40" name="Emerald Sunstone" hidden="false" collective="false" import="true" type="upgrade">
@@ -190,7 +190,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="3.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5622-6ca9-5385-fadd" name="Ancient Data-Script" hidden="false" collective="false" import="true" type="upgrade">
@@ -212,7 +212,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -233,8 +233,9 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2197-b271-d92d-e63f" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d97-b05c-8cb2-72ae" type="instanceOf"/>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0fea-2c25-c4fa-38b2" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2197-b271-d92d-e63f" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -438,7 +439,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="3.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="62ce-4eaa-a0a0-839a" name="Battle Forged Armor" publicationId="9ed2-b94e-33e0-364e" page="62" hidden="false" collective="false" import="true" type="upgrade">
@@ -460,7 +461,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6a56-061a-854e-31a4" name="Artifact of Old Earth" publicationId="9ed2-b94e-33e0-364e" page="62" hidden="false" collective="false" import="true" type="upgrade">
@@ -482,7 +483,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1049,7 +1050,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1131-722e-ed98-bad8" name="Icon of the Emperor" hidden="false" collective="false" import="true" type="upgrade">
@@ -1071,7 +1072,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5fb4-78ec-5df6-dbbd" name="Shield Generator" hidden="false" collective="false" import="true" type="upgrade">
@@ -1093,7 +1094,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="83ff-e19a-a497-4b69" name="Life Pack" hidden="false" collective="false" import="true" type="upgrade">
@@ -1115,7 +1116,7 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+                <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3373,7 +3374,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="10e7-978e-62c7-58f2" name="Kevlar Under Armor" publicationId="9ed2-b94e-33e0-364e" page="62" hidden="false" collective="false" import="true" type="upgrade">
@@ -3395,7 +3396,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="554e-ed5f-d2d2-adcf" name="Opiate Pack" hidden="false" collective="false" import="true" type="upgrade">
@@ -3422,7 +3423,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5b0b-005c-23f6-2823" name="Com-link" hidden="false" collective="false" import="true" type="upgrade">
@@ -3444,7 +3445,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5cab-9e59-2e72-4209" name="Machine Cult Relics" hidden="false" collective="false" import="true" type="upgrade">
@@ -3574,7 +3575,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1438-58b3-91d7-2ab1" name="Accuracy Lock" publicationId="9ed2-b94e-33e0-364e" page="62" hidden="false" collective="false" import="true" type="upgrade">
@@ -3596,7 +3597,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="62c6-73d9-0bfb-15de" name="Armored Bracing" hidden="false" collective="false" import="true" type="upgrade">
@@ -3618,7 +3619,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="3.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cecb-03c6-4b4e-a8a5" name="Jet-Wings" hidden="false" collective="false" import="true" type="upgrade">
@@ -3640,7 +3641,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="db7c-95f9-c482-b00b" name="Meteorite Gauntlet" hidden="false" collective="false" import="true" type="upgrade">
@@ -3662,7 +3663,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b3aa-38fe-3922-dcba" name="Meteorite Helm" hidden="false" collective="false" import="true" type="upgrade">
@@ -3684,7 +3685,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="86cb-76c5-6da3-fc29" name="Illicit Opiate Pack" hidden="false" collective="false" import="true" type="upgrade">
@@ -3750,7 +3751,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="0.0"/>
+        <cost name="UC" typeId="9e37-50a0-9764-fda5" value="2.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

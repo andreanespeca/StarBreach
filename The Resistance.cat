@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4911-e806-9300-0c16" name="The Resistance" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="d284-e42e-1c51-a4fb" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4911-e806-9300-0c16" name="The Resistance" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="d284-e42e-1c51-a4fb" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="c90c-9a65-65a3-40c7" name="Squad Leader (Alpha)" hidden="false" collective="false" import="true" targetId="0ada-cf66-937a-ec57" type="selectionEntry"/>
     <entryLink id="8ebd-ed4a-1dca-2a87" name="Veteran Rebel" hidden="false" collective="false" import="true" targetId="87e5-1ee2-30d4-ed13" type="selectionEntry"/>
@@ -623,9 +623,14 @@
     <selectionEntry id="0eba-e354-cbc3-a103" name="Illicit Opiate Pack" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9dcd-0ee5-5fbf-0074" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <profiles>
@@ -642,9 +647,14 @@
     <selectionEntry id="aa9b-7c9c-cc3a-ff34" name="Illicit Steroid Pack" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9dcd-0ee5-5fbf-0074" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ada-cf66-937a-ec57" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <profiles>

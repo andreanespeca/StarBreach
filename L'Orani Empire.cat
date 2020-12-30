@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4f62-f7f5-4489-6376" name="L&apos;Orani Empire" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="d284-e42e-1c51-a4fb" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4f62-f7f5-4489-6376" name="L&apos;Orani Empire" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="d284-e42e-1c51-a4fb" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="629f-f123-904c-7e8a" name="L’Orani Prince (Alpha)" hidden="false" collective="false" import="true" targetId="1323-638a-27d1-20fd" type="selectionEntry"/>
     <entryLink id="d017-9fde-5458-13a4" name="Royal Bodyguard" hidden="false" collective="false" import="true" targetId="93a7-a336-2f8e-6aed" type="selectionEntry"/>
@@ -24,7 +24,7 @@
       <modifiers>
         <modifier type="increment" field="9e37-50a0-9764-fda5" value="3.0">
           <conditions>
-            <condition field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b9b-3f20-545d-1679" type="greaterThan"/>
+            <condition field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3c9c-6b8a-738d-b4ba" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -557,9 +557,14 @@
     <selectionEntry id="ca34-f39d-5ebb-630e" name="Starflare Grenade" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d121-da4e-5505-2add" type="instanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1323-638a-27d1-20fd" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d121-da4e-5505-2add" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <profiles>
@@ -577,6 +582,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9f0a-af65-e86f-689d" name="Starblast Grenade" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9e37-50a0-9764-fda5" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1323-638a-27d1-20fd" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="3e87-e864-aafd-ad71" name="Starblast Grenade" hidden="false" typeId="b156-a531-d7e5-2ffc" typeName="Grenade">
           <characteristics>

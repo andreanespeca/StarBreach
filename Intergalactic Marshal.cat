@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1751-0089-fe00-b7d4" name="Intergalactic Marshal" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="d284-e42e-1c51-a4fb" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1751-0089-fe00-b7d4" name="Intergalactic Marshals" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="d284-e42e-1c51-a4fb" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="a4b4-c50c-af7d-7590" name="Marshal (Alpha)" hidden="false" collective="false" import="true" targetId="bea9-06f5-b530-01cb" type="selectionEntry"/>
     <entryLink id="d636-c7f1-c9ab-d501" name="Psycher Deputy (Unique/Psychic)" hidden="false" collective="false" import="true" targetId="e64b-cfbe-c9e3-3b6b" type="selectionEntry"/>
@@ -24,7 +24,7 @@
       <modifiers>
         <modifier type="increment" field="9e37-50a0-9764-fda5" value="3.0">
           <conditions>
-            <condition field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f62f-909d-2651-8d35" type="greaterThan"/>
+            <condition field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3c9c-6b8a-738d-b4ba" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -74,7 +74,7 @@
         </entryLink>
         <entryLink id="8241-c288-eef0-6866" name="Alpha Skills" hidden="false" collective="false" import="true" targetId="3c9c-6b8a-738d-b4ba" type="selectionEntryGroup">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7716-f06a-ac26-906f" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7716-f06a-ac26-906f" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -707,7 +707,7 @@
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bea9-06f5-b530-01cb" type="instanceOf"/>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e56b-0c94-9b69-d968" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="80bc-9116-567e-d146" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a724-c097-6fba-d590" name="U&apos;Rak Warlords" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="d284-e42e-1c51-a4fb" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a724-c097-6fba-d590" name="U&apos;rak Warlords" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="d284-e42e-1c51-a4fb" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="cc3b-e435-a6c8-317e" name="Big Bad Boss (Alpha)" hidden="false" collective="false" import="true" targetId="fced-89c8-f5ed-cf16" type="selectionEntry"/>
     <entryLink id="d4fa-d1f8-02f9-799f" name="Big Bad Muscle" hidden="false" collective="false" import="true" targetId="c2a9-f166-da29-3f15" type="selectionEntry"/>
@@ -24,7 +24,7 @@
       <modifiers>
         <modifier type="increment" field="9e37-50a0-9764-fda5" value="3.0">
           <conditions>
-            <condition field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e51-0469-843a-52b7" type="greaterThan"/>
+            <condition field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c9c-6b8a-738d-b4ba" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
